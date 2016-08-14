@@ -1,0 +1,23 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glinkap/irk-moksi.git"
+  },
+  "author": "Petr Glinka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glinkap/irk-moksi/issues"
+  },
+  "homepage": "https://github.com/glinkap/irk-moksi#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
