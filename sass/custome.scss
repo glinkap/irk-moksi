@@ -8,6 +8,10 @@
 .forms--vizit--stage-wrapper {margin-top: 20px}
 .distance {height: 50px;}
 .input_margin_bottom {margin-bottom: 20px}
+.row__margin-bottom {margin-bottom: 20px;}
+
+
+
 // Заголовки
 .form-groups__h2,legend {font-size: 1.325em;font-weight: bold;text-align: center;padding: 30px 0 0px 0;}
 .form-groups__name{font-weight: bold;}
@@ -21,9 +25,14 @@ div.form-inline {margin-bottom: 20px;}
 .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {margin-left: 0px;}
 .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {margin-right: 10px}
 textarea {margin-top: 10px}
+label {margin-bottom: 10px}
 
 
 //Переопределения bootstrap
 input[type="radio"]:after, .radio input[type="radio"]:after, .radio-inline input[type="radio"]:after,
 input[type="radio"]:before, .radio input[type="radio"]:before, .radio-inline input[type="radio"]:before
 {top: -8px}
+
+
+// Кнопки
+.btn__width-size__1 {min-width: 250px;}

@@ -82,7 +82,7 @@
 
         <!--              STAGE 1              -->
         <div class="forms--vizit0--stage0  forms--vizit--stage-wrapper">
-        
+
           <form class="form-horizontal" role="form">
            <div class="form-group ">
             <label class="control-label col-sm-6" for="data-vizita">Дата визита</label>
@@ -114,7 +114,7 @@
          <fieldset>
           <legend>Жизненно-важные показатели и антропометрические данные</legend>       
           <div class="row">
-              <div class="input_margin_bottom col-sm-3">
+            <div class="input_margin_bottom col-sm-3">
               <label class="" for="vozrast">Рост</label>             
               <input type="text" class="form-control" id="vozrast" placeholder="см.">   
             </div>
@@ -125,14 +125,14 @@
             <div class="input_margin_bottom col-sm-3">
               <label class=" " for="vozrast">Индекс массы тела</label>
               <input type="text" class="form-control" id="vozrast" placeholder="кг/м&sup2;">
-             </div>
+            </div>
             <div class="input_margin_bottom col-sm-3">
               <label class="" for="vozrast">Температура тела:</label>
               <input type="text" class="form-control" id="vozrast" placeholder="&#248С">
             </div>
           </div>
           <div class="row">
-              <div class="input_margin_bottom col-sm-3">
+            <div class="input_margin_bottom col-sm-3">
               <label class="" for="vozrast">ЧСС</label>             
               <input type="text" class="form-control" id="vozrast" placeholder="уд/мин">
               <span class="help-block">В покое</span>  
@@ -143,47 +143,253 @@
             </div>
             <label class="col-sm-6" for="arterialnoe_davlenie">Артериальное давление (В положении сидя)</label>
             <div class="input_margin_bottom col-sm-3 ">             
-                <input type="text" class="form-control double-field1" id="arterialnoe_davlenie" placeholder="мм рт.ст.">
-                <span class="help-block">Cистолическое</span>                     
-             </div>
+              <input type="text" class="form-control double-field1" id="arterialnoe_davlenie" placeholder="мм рт.ст.">
+              <span class="help-block">Cистолическое</span>                     
+            </div>
             <div class="input_margin_bottom col-sm-3 "> 
-                <input type="text" class="form-control double-field1" id="arterialnoe_davlenie" placeholder="мм рт.ст.">
-                <span class="help-block">Диастолическое</span>           
-             </div>
+              <input type="text" class="form-control double-field1" id="arterialnoe_davlenie" placeholder="мм рт.ст.">
+              <span class="help-block">Диастолическое</span>           
+            </div>
           </div>        
         </fieldset>
         <fieldset>
           <legend>Данные физикального обследования</legend>
-          <div class="row">
-       <div class="col-sm-7">
-       <p class="form-groups__name">Кожные покровы, мягкие ткани, кости и суставы</p>
-         <label class="radio-inline">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
-        </label>
-        <label class="radio-inline">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
-        </label>
-        <label class="radio-inline">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
-        </label>
-       </div>
-       <div class="col-sm-5">
-        <textarea class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)"></textarea>
-       </div>
-       
-        </div>
+          <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Кожные покровы, мягкие ткани, кости и суставы</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Лимфатические узлы</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Дыхательная система</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Сердечно-сосудистая система</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Желудочно-кишечный тракт</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Мочеполовая система</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Эндокринная система</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Скелетно-мышечная система</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Нервно-психический статус</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
       </fieldset>
-      </form>
+      <p>
+  <button type="button" class="btn btn-primary btn__width-size__1 center-block">Далее</button>
+</p>
+  <!--              EOF STAGE 1              -->
+
+<!--              STAGE 2              -->      
+<fieldset>
+  <legend>Перенесенные и сопутствующие заболевания (за 6 месяцев до Визита 0)</legend>
+  <div class="row row__margin-bottom">
+    <div class="col-sm-10">
+     <p class="form-groups__name">Диагноз</p>
+     <textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Описание диагноза"></textarea>    
+   </div>
+   <div class="col-sm-2 col-xs-6">   
+    <label class="" for="data-vizita">Месяц/год</label>            
+    <input type="date" class="form-control input_margin_bottom" id="data-vizita" >  
+  </div>
+  <div class="col-xs-12">
+    <button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить диагноз</button>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+<legend>Cтатус табакокурения</legend>
+ <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Никогда не курил(а)
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Курит в настоящее время
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Курил(а) в прошлом
+            </label>
+            <!-- Количество полных лет без курения: -->
+          </div>
+          <div class="col-sm-5">
+            <div class="form-group1 ">
+              <label class="control-label col-sm-8" for="data-vizita1">Количество полных лет без курения</label>
+              <div class="col-sm-4">
+                <input class="form-control col-sm-6" id="data-vizita1" placeholder="Лет">
+              </div>
+            </div>
+          </div>         
+        </div>  <!-- End Row -->
+</fieldset>
+<!--              EOF STAGE 2              -->      
+    </form>
 
 
 
 
   </div>
   <div class="distance"></div>
-  <!--              /STAGE 1              -->
 
 
 
@@ -220,9 +426,24 @@
 <script src="vendor/js/jquery.min.js"></script>
 <script src="vendor/js/bootstrap.min.js"></script>
 <script src="assets/js/controls.js"></script>
-<script type="text/javascript">
 
 
-</script>
+<!--  <script>            Болванка для датапикера  Мемяцы и годы...
+(function(){
+          $('input').datepicker({
+                           format: "MM yyyy",
+                           startView: 1,
+                           minViewMode: 1,
+                           clearBtn: true,
+                           language: "ru",
+                           orientation: "bottom auto",
+                           multidate: false,
+                           multidateSeparator: false,
+                           autoclose: true,
+                           toggleActive: true
+                      });
+
+})();
+</script> -->
 </body>
 </html>
