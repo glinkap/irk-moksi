@@ -25,8 +25,9 @@ div.form-inline {margin-bottom: 20px;}
 .radio-inline + .radio-inline, .checkbox-inline + .checkbox-inline {margin-left: 0px;}
 .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {margin-right: 10px}
 textarea {margin-top: 10px}
-label {margin-bottom: 10px}
+label {margin-bottom: 10px} 
 
+@media screen and (max-width: 1200px) and (min-width:768px) {.label__horiz-vertical-type-combinate {padding-top: 0 !important;} }
 
 //Переопределения bootstrap
 input[type="radio"]:after, .radio input[type="radio"]:after, .radio-inline input[type="radio"]:after,
@@ -35,4 +36,4 @@ input[type="radio"]:before, .radio input[type="radio"]:before, .radio-inline inp
 
 
 // Кнопки
-.btn__width-size__1 {min-width: 250px;}
+.btn__width-size__1 {min-width: 250px;} 
