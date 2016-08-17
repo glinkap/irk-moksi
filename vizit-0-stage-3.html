@@ -77,37 +77,149 @@
           <button type="button" class="btn btn-default">Шаг 8</button>
         </div>
 
+        <form class="form-horizontal">
 
 
 
-       
-<!--              START STAGE 3              -->  
-<fieldset>
-  <p class="form-groups__h1">Данные лабораторно-инструментального обследования</p>
-  <p class="form-groups__h2">Общий анализ крови</p>
-  <div class="row "> <!-- Start Row -->
-    <div class="col-xs-6 col-sm-12">
-     <div class="form-group">
-      <label for="reqwreq" class="col-sm-6 control-label">Дата проведения</label>
-      <div class="col-sm-4">
-        <input type="date" class="form-control" id="reqwreq" placeholder="Password">
+          <!--              START STAGE 3              -->  
+          <fieldset>
+            <p class="form-groups__h1">Данные лабораторно-инструментального обследования</p>
+            <p class="form-groups__h2">Общий анализ крови</p>
+            <div class="row "> <!-- Start Row -->
+              <div class="col-xs-6 col-sm-12">
+               <div class="form-group">
+                <label for="reqwreq" class="col-sm-6 control-label">Дата проведения</label>
+                <div class="col-sm-4">
+                  <input type="date" class="form-control" id="reqwreq" placeholder="Password">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+          <div class="table-pseudo table-pseudo__striped table-pseudo__hover">
+            <div class="table-pseudo__row">
+              <div class="row table-pseudo__row-header">      
+                <div class="col-xs-3">Параметр</div>
+                <div class="col-xs-3">Результат</div>      
+                <div class="col-xs-3">Единицы</div>      
+                <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>      
+              </div>
+            </div> 
+            <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Гемоглобин</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+            <div class="row">
+              <div class="col-xs-3">        
+               <div class="table-pseudo__1col_content-wrapper"><p>Эритроциты</p> </div>       
+             </div>
+             <div class="col-xs-3">        
+              <div class="table-pseudo__input-col_content-wrapper">
+                <input type="text" class="form-control" id="tblinput" >
+              </div>
+            </div>
+            <div class="col-xs-3">        
+              <div class="table-pseudo__input-col_content-wrapper">
+                <input type="text" class="form-control" id="tblinput" >
+              </div>
+            </div>
+            <div class="col-sm-3 ">
+              <div class="table-pseudo__checkbox-col_content-wrapper">
+                <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+              </div>
+            </div>    
+          </div>
+        </div> <!-- EOF: PSEUDO ROW -->
+        <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+          <div class="row">
+            <div class="col-xs-3">        
+             <div class="table-pseudo__1col_content-wrapper"><p>Тромбоциты</p> </div>       
+           </div>
+           <div class="col-xs-3">        
+            <div class="table-pseudo__input-col_content-wrapper">
+              <input type="text" class="form-control" id="tblinput" >
+            </div>
+          </div>
+          <div class="col-xs-3">        
+            <div class="table-pseudo__input-col_content-wrapper">
+              <input type="text" class="form-control" id="tblinput" >
+            </div>
+          </div>
+          <div class="col-sm-3 ">
+            <div class="table-pseudo__checkbox-col_content-wrapper">
+              <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+            </div>
+          </div>    
+        </div>
+      </div> <!-- EOF: PSEUDO ROW -->
+      <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+        <div class="row">
+          <div class="col-xs-3">        
+           <div class="table-pseudo__1col_content-wrapper"><p>Лейкоциты</p> </div>       
+         </div>
+         <div class="col-xs-3">        
+          <div class="table-pseudo__input-col_content-wrapper">
+            <input type="text" class="form-control" id="tblinput" >
+          </div>
+        </div>
+        <div class="col-xs-3">        
+          <div class="table-pseudo__input-col_content-wrapper">
+            <input type="text" class="form-control" id="tblinput" >
+          </div>
+        </div>
+        <div class="col-sm-3 ">
+          <div class="table-pseudo__checkbox-col_content-wrapper">
+            <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+          </div>
+        </div>    
       </div>
+    </div> <!-- EOF: PSEUDO ROW -->
+    <br>
+    <p class="form-groups__name">Лейкоцитарная формула</p>
+    <div class="table-pseudo__row leikocitar-formula"> <!-- START PSEUDO ROW -->
+      <div class="row">
+        <div class="col-xs-3">        
+         <div class="table-pseudo__1col_content-wrapper"><p>Нейтрофилы</p> </div>       
+       </div>
+       <div class="col-xs-3">        
+        <div class="table-pseudo__input-col_content-wrapper">
+          <input type="text" class="form-control" id="tblinput" >
+        </div>
+      </div>
+      <div class="col-xs-3">        
+        <div class="table-pseudo__input-col_content-wrapper">
+          <input type="text" class="form-control" id="tblinput" >
+        </div>
+      </div>
+      <div class="col-sm-3 ">
+        <div class="table-pseudo__checkbox-col_content-wrapper">
+          <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+        </div>
+      </div>    
     </div>
-  </div>
-</div>  <!-- End Row -->
-<div class="table-pseudo table-pseudo__striped table-pseudo__hover">
-  <div class="table-pseudo__row">
-    <div class="row table-pseudo__row-header">      
-      <div class="col-xs-3">Параметр</div>
-      <div class="col-xs-3">Результат</div>      
-      <div class="col-xs-3">Единицы</div>      
-      <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>      
-    </div>
-  </div> 
-  <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  </div> <!-- EOF: PSEUDO ROW -->
+  <div class="table-pseudo__row leikocitar-formula"> <!-- START PSEUDO ROW -->
     <div class="row">
       <div class="col-xs-3">        
-       <div class="table-pseudo__1col_content-wrapper"><p>Гемоглобин</p> </div>       
+       <div class="table-pseudo__1col_content-wrapper"><p>Лимфоциты</p> </div>       
      </div>
      <div class="col-xs-3">        
       <div class="table-pseudo__input-col_content-wrapper">
@@ -123,120 +235,8 @@
       <div class="table-pseudo__checkbox-col_content-wrapper">
         <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
       </div>
-    </div> 
+    </div>    
   </div>
-</div> <!-- EOF: PSEUDO ROW -->
-<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-  <div class="row">
-    <div class="col-xs-3">        
-     <div class="table-pseudo__1col_content-wrapper"><p>Эритроциты</p> </div>       
-   </div>
-   <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-sm-3 ">
-    <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-    </div>
-  </div>    
-</div>
-</div> <!-- EOF: PSEUDO ROW -->
-<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-  <div class="row">
-    <div class="col-xs-3">        
-     <div class="table-pseudo__1col_content-wrapper"><p>Тромбоциты</p> </div>       
-   </div>
-   <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-sm-3 ">
-    <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-    </div>
-  </div>    
-</div>
-</div> <!-- EOF: PSEUDO ROW -->
-<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-  <div class="row">
-    <div class="col-xs-3">        
-     <div class="table-pseudo__1col_content-wrapper"><p>Лейкоциты</p> </div>       
-   </div>
-   <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-sm-3 ">
-    <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-    </div>
-  </div>    
-</div>
-</div> <!-- EOF: PSEUDO ROW -->
-<br>
-<p class="form-groups__name">Лейкоцитарная формула</p>
-<div class="table-pseudo__row leikocitar-formula"> <!-- START PSEUDO ROW -->
-  <div class="row">
-    <div class="col-xs-3">        
-     <div class="table-pseudo__1col_content-wrapper"><p>Нейтрофилы</p> </div>       
-   </div>
-   <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-sm-3 ">
-    <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-    </div>
-  </div>    
-</div>
-</div> <!-- EOF: PSEUDO ROW -->
-<div class="table-pseudo__row leikocitar-formula"> <!-- START PSEUDO ROW -->
-  <div class="row">
-    <div class="col-xs-3">        
-     <div class="table-pseudo__1col_content-wrapper"><p>Лимфоциты</p> </div>       
-   </div>
-   <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-xs-3">        
-    <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" >
-    </div>
-  </div>
-  <div class="col-sm-3 ">
-    <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-    </div>
-  </div>    
-</div>
 </div> <!-- EOF: PSEUDO ROW -->
 <div class="table-pseudo__row leikocitar-formula"> <!-- START PSEUDO ROW -->
   <div class="row">
@@ -328,12 +328,14 @@
 </div> <!-- EOF: PSEUDO ROW -->
 </div> 
 </div> 
-</fieldset>
+</fieldset> 
+</form>
+<!-- <form class="form-horizontal"> -->
 <fieldset> 
   <p class="form-groups__h2">Биохимический анализ крови</p>  
   <div class="row "> <!-- Start Row -->
     <div class="col-xs-6 col-sm-12">
-     <div class="form-group clearfix">
+     <div class="form-group ">
       <label for="reqwreq" class="col-sm-6 control-label">Дата проведения</label>
       <div class="col-sm-4">
         <input type="date" class="form-control" id="reqwreq" placeholder="Password">
