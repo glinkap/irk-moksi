@@ -13,7 +13,8 @@
 
 
 // Заголовки
-.form-groups__h2,legend {font-size: 1.325em;font-weight: bold;text-align: center;padding: 30px 0 0px 0;}
+.form-groups__h1 {font-size: 1.925em;font-weight: bold;text-align: center;padding: 30px 0 0px 0;}
+.form-groups__h2,legend {font-size: 1.325em;font-weight: bold;text-align: center;padding: 30px 0 0px 0; margin-bottom: 20px;}
 .form-groups__name{font-weight: bold;}
 
 
@@ -37,3 +38,21 @@ input[type="radio"]:before, .radio input[type="radio"]:before, .radio-inline inp
 
 // Кнопки
 .btn__width-size__1 {min-width: 250px;} 
+
+
+
+/*Pseudo Table*/
+.table-pseudo {width: 100%;max-width: 100%;margin-bottom: 20px;}
+.table-pseudo__hover .table-pseudo__row:hover {background: #f1f1f1 !important;  }
+.table-pseudo__striped .table-pseudo__row:nth-of-type(odd):not(:first-child) { background-color: #f9f9f9; }
+.table-pseudo__row:not(:nth-child(1)) { border-top:1px solid #ddd;}
+.table-pseudo__row-header {padding: 8px;font-weight: bold;}
+.table-pseudo__row:not(:nth-child(1)) {padding: 8px;}
+.table-pseudo__row-header_4col {text-align: center;}
+
+.label__checkbox__pseudo_table {margin-top: 7px;position: absolute;margin-left: -10px;}
+.table-pseudo__1col_content-wrapper p { margin-top: 10px;}
+.table-pseudo__checkbox-col_content-wrapper {text-align: center;}
+.table-pseudo__input-col_content-wrapper input {margin-top: 2px;}
+.leikocitar-formula .table-pseudo__1col_content-wrapper p {margin-left: 30px;}
+/*/Pseudo Table*/
