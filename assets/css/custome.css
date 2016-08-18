@@ -39,7 +39,8 @@
   margin-bottom: 20px; }
 
 .form-groups__name {
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 10px; }
 
 .input-name-inline, .help-block-inline {
   display: inline-block;
@@ -96,6 +97,9 @@ select {
 
 .btn__distance {
   margin: 20px auto; }
+
+.btn__distance--type2 {
+  margin-bottom: 20px; }
 
 /*Pseudo Table*/
 .table-pseudo {
