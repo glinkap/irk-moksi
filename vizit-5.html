@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Индивидуальная регистрационная карта</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="assets/css/irk-moksi.css" media="screen">
+  <link rel="stylesheet" href="assets/css/glyphicons.css" media="screen">
+  <link rel="stylesheet" href="assets/css/custome.css" media="screen">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="../assets/css/ie8.css"  />
+  <script src="../vendor/js/html5shiv.min.js"></script>
+  <script src="../vendor/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="left-sidebar">
+  <div class="navbar navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button id="toggle" class="navbar-toggle no-collapse pull-left" type="button">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a href="../" class="navbar-brand">ИРК Моксифлоксацин</a>
+        <p class="navbar-text">Визиты</p>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="ic-lockoff"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper toggled">
+    <!-- Sidebar -->
+    <div class="sidebar-left">
+      <a href="#" class="logo-cyberplat-ink"></a>
+      <ul class="nav accordion">
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+      </ul>
+    </div>
+    <!-- /Sidebar -->
+
+    <!-- Page Content -->
+    <div class="content">
+      <div class="container">
+       <div class="forms-wrapper">         <!-- Standard button -->
+         <div class="stage-nav-bar text-center btn-second-line-step">
+           <button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Визит 0</button>
+           <button type="button" class="btn btn-primary btn-active">Визит 1</button>
+           <button type="button" class="btn btn-default">Визит 2</button>
+           <button type="button" class="btn btn-default">Визит 3</button>
+           <button type="button" class="btn btn-default">Визит 4</button>
+           <button type="button" class="btn btn-default" disabled="disabled">Визит 5</button>
+           <button type="button" class="btn btn-default" disabled="disabled">Нежелательные явления</button>
+           <button type="button" class="btn btn-default" disabled="disabled">Сопутствующая терапия</button>      
+           <button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
+         </div>
+         <h1 class="forms--h1">Визит 1</h1>  
+         <div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+          <button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Шаг 1</button>
+          <button type="button" class="btn btn-primary btn-active">Шаг 2</button>
+          <button type="button" class="btn btn-default">Шаг 3</button>
+          <button type="button" class="btn btn-default">Шаг 4</button>
+          <button type="button" class="btn btn-default">Шаг 5</button>
+          <button type="button" class="btn btn-default">Шаг 6</button>
+          <button type="button" class="btn btn-default">Шаг 7</button>
+          <button type="button" class="btn btn-default">Шаг 8</button>
+        </div>
+
+        <form class="form-horizontal form__top-distance">
+          <fieldset>        
+            <div class="row "> <!-- Start Row -->
+              <div class="col-xs-8 col-sm-12">
+               <div class="form-group">
+                <label for="reqwreq" class=" col-xs-12 col-sm-6 control-label">Дата визита</label>
+                <div class=" col-sm-3 col-xs-8">
+                  <input type="date" class="form-control" id="reqwreq" placeholder="Password">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+          
+          <p class="form-groups__h1">Жизненно-Важные Показатели</p>
+          <div class="row">            
+            <div class="input_margin_bottom col-sm-3">
+              <label class="" for="vozrast">Температура тела:</label>
+              <input type="text" class="form-control" id="vozrast" placeholder="&deg;С">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input_margin_bottom col-sm-3">
+              <label class="" for="vozrast">ЧСС</label>             
+              <input type="text" class="form-control" id="vozrast" placeholder="уд/мин">
+              <span class="help-block">В покое</span>  
+            </div>
+            <div class="input_margin_bottom col-sm-3">
+              <label class="" for="vozrast">ЧДД</label>             
+              <input type="text" class="form-control" id="vozrast" placeholder="в мин">              
+            </div>
+            <label class="col-sm-6" for="arterialnoe_davlenie">Артериальное давление (В положении сидя)</label>
+            <div class="input_margin_bottom col-sm-3 ">             
+              <input type="text" class="form-control double-field1" id="arterialnoe_davlenie" placeholder="мм рт.ст.">
+              <span class="help-block">Cистолическое</span>                     
+            </div>
+            <div class="input_margin_bottom col-sm-3 "> 
+              <input type="text" class="form-control double-field1" id="arterialnoe_davlenie" placeholder="мм рт.ст.">
+              <span class="help-block">Диастолическое</span>           
+            </div>
+          </div> 
+        </fieldset>     
+        <fieldset>
+         <p class="form-groups__h1">Данные Физикального Обследования</p>
+         <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Кожные покровы, мягкие ткани, кости и суставы</p>
+             <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <p class="form-groups__name">Клинически значимое (описание)</p>
+            <textarea class="textarea_toggler form-control show" rows="2" placeholder="описание"></textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+         <div class="col-sm-7">
+           <p class="form-groups__name">Лимфатические узлы</p>
+           <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+          </label>
+        </div>
+        <div class="col-sm-5">
+          <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+        </div> 
+      </div>  <!-- End Row -->
+      <div class="row row__margin-bottom">  <!-- Start Row -->
+       <div class="col-sm-7">
+         <p class="form-groups__name">Дыхательная система</p>
+         <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+        </label>
+      </div>
+      <div class="col-sm-5">
+        <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+      </div> 
+    </div>  <!-- End Row -->
+    <div class="row row__margin-bottom">  <!-- Start Row -->
+     <div class="col-sm-7">
+       <p class="form-groups__name">Сердечно-сосудистая система</p>
+       <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+      </label>
+    </div>
+    <div class="col-sm-5">
+      <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+    </div> 
+  </div>  <!-- End Row -->
+  <div class="row row__margin-bottom">  <!-- Start Row -->
+   <div class="col-sm-7">
+     <p class="form-groups__name">Желудочно-кишечный тракт</p>
+     <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+    </label>
+  </div>
+  <div class="col-sm-5">
+    <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+  </div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Мочеполовая система</p>
+   <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+</div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Эндокринная система</p>
+   <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+</div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Скелетно-мышечная система</p>
+   <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+</div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Нервно-психический статус</p>
+   <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea class="textarea_toggler form-control hide" rows="2" placeholder="Клинически значимое (описание)"></textarea>
+</div> 
+</div>  <!-- End Row -->
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset> 
+  <p class="form-groups__h1">Данные лабораторно-инструментального обследования</p>
+  <p class="form-groups__h2">Биохимический анализ крови</p>  
+  <div class="row "> <!-- Start Row -->
+    <div class="col-xs-8 col-sm-12">
+     <div class="form-group ">
+      <label for="reqwreq" class="col-sm-6 control-label">Дата проведения</label>
+      <div class="col-sm-4">
+        <input type="date" class="form-control" id="reqwreq" placeholder="Password">
+      </div>
+    </div>
+  </div>
+</div>  <!-- End Row -->
+<div class="table-pseudo table-pseudo__striped table-pseudo__hover">
+  <div class="table-pseudo__row">
+    <div class="row table-pseudo__row-header">      
+      <div class="col-xs-3">Параметр</div>
+      <div class="col-xs-3">Результат</div>      
+      <div class="col-xs-3">Единицы</div>      
+      <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>      
+    </div>
+  </div> 
+  <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+    <div class="row">
+      <div class="col-xs-3">        
+       <div class="table-pseudo__1col_content-wrapper"><p>Креатинин</p> </div>       
+     </div>
+     <div class="col-xs-3">        
+      <div class="table-pseudo__input-col_content-wrapper">
+        <input type="text" class="form-control" id="tblinput" >
+      </div>
+    </div>
+    <div class="col-xs-3">        
+      <div class="table-pseudo__input-col_content-wrapper">
+        <input type="text" class="form-control" id="tblinput" >
+      </div>
+    </div>
+    <div class="col-sm-3 ">
+      <div class="table-pseudo__checkbox-col_content-wrapper">
+        <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+      </div>
+    </div> 
+  </div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>Калий</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>Натрий</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>АлAТ</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>АcAТ</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>Мочевина</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" >
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+</div>
+</fieldset>
+
+
+
+
+<fieldset>
+            <p class="form-groups__h2">Общий анализ мочи</p>
+            <div class="row "> <!-- Start Row -->
+              <div class="col-xs-8 col-sm-12">
+               <div class="form-group">
+                <label for="reqwreq" class=" col-sm-6 control-label">Дата проведения</label>
+                <div class=" col-sm-4 col-md-2 ">
+                  <input type="date" class="form-control" id="reqwreq" placeholder="Password">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+          <div class="table-pseudo table-pseudo__striped table-pseudo__hover">
+            <div class="table-pseudo__row">
+              <div class="row table-pseudo__row-header">      
+                <div class="col-xs-3">Параметр</div>
+                <div class="col-xs-3">Результат</div>      
+                <div class="col-xs-3">Единицы</div>      
+                <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>      
+              </div>
+            </div> 
+            <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Относительная плотность</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Белок</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Глюкоза</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Лейкоциты</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Эритроциты</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" >
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+              
+ 
+</fieldset> 
+
+
+
+
+
+</form>
+<form class="form-horizontal">
+  <fieldset> 
+
+    <p class="form-groups__h2">Электрокардиография</p>
+    <div class="row row__margin-bottom">  <!-- Start Row -->
+     <div class="col-sm-5 col-md-4">            
+      <p class="form-groups__name">Отмечены ли отклонения от нормы?</p>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Да
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет
+      </label>            
+    </div>
+    <div class="col-sm-7 col-md-8">
+      <p class="form-groups__name">Уточните отклонения от нормы</p>
+      <textarea class="textarea_toggler form-control show" rows="1" ></textarea>
+    </div> 
+  </div>  <!-- End Row -->
+
+
+
+
+  
+
+
+
+
+
+
+
+<fieldset>
+  <div class="row "> <!--  START ROW -->
+    <p class="form-groups__h1">Нежелательные явления</p>
+    <div class="block_radio_checkbox_2side_fix">
+      <p class="form-groups__name">
+        Присутствие нежелательных явлений
+      </p>   
+      <label class="radio-inline ">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> 
+        </div>
+      </div> <!-- EOF: ROW -->
+      <!-- ++++++++++++++++++++++++++++    ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
+      <div class="forma_regi_nejelat_yavl--wrapper">
+        <p class="form-groups__h2">Форма регистрации нежелательных явлений</p>
+        <div class="">  <!-- BLOCK START -->
+         <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-9 col-md-9">
+           <p class="form-groups__name">Описание Нежелательного Явления (НЯ)</p>
+           <textarea class="form-control input_margin_bottom" rows="8" id="perenesenn_zabolevaniya" placeholder="Описание НЯ"></textarea>    
+         </div>
+         <div class="col-sm-3 col-xs-6 col-md-3">   
+          <label class="" for="data-vizita">Дата начала НЯ</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" >
+          <label class="" for="data-vizita">Дата окончания НЯ</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" disabled>  
+          <label>
+            <input type="checkbox" checked> Продолжается
+          </label>  
+        </div> 
+      </div> <!-- EOF: ROW -->
+      <div class="row row__margin-bottom">  <!-- START ROW -->
+        <div class="col-sm-4">
+         <p class="form-groups__name">Связь с исследуемым препаратом (ИП)</p>
+         <select class="form-control">
+           <option>Не указано</option>
+           <option>Отсутствие связи</option>
+           <option>Маловероятная связь</option>
+           <option>Возможная связь</option>
+           <option>Вероятная связь</option>
+           <option>Определенная связь</option>
+         </select>
+       </div>
+       <div class="col-sm-4">
+         <p class="form-groups__name">Степень тяжести</p>
+         <select class="form-control">
+           <option>Не указано</option>
+           <option>Легкая степень</option>
+           <option>Умеренная степень</option>
+           <option>Тяжелая степень</option>
+         </select>
+       </div>
+       <div class="col-sm-4">
+         <p class="form-groups__name">Действия, предпринятые в связи с НЯ</p>
+         <select class="form-control">
+           <option>Не указано</option>
+           <option>Отсутствие действий</option>
+           <option>Снижение дозы</option>
+           <option>Временная приостановка назначения препарата</option>
+           <option>Окончательное прекращение назначения препарата</option>
+           <option>Неизвестно</option>
+         </select>
+       </div>
+
+     </div> <!-- EOF: ROW -->
+     <div class="row row__margin-bottom">  <!-- START ROW -->
+       <div class="col-sm-6 col-md-4">     
+         <p class="form-groups__name">
+           Назначена терапия для лечения НЯ?
+         </p>   
+         <label class="radio-inline ">
+           <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+           <label class="radio-inline">
+             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
+           </div>
+           <div class="col-sm-6">
+             <p class="form-groups__name">Исход НЯ</p>
+             <select class="form-control">
+               <option>Не указано</option>
+               <option>Выздоровление/разрешение</option>
+               <option>Выздоровление/разрешение с последствиями для здоровья</option>
+               <option>Отсутствие выздоровления/разрешения</option>
+               <option>Летальный исход</option>
+               <option>Нет сведений</option>
+             </select>
+           </div>
+         </div> <!-- EOF: ROW -->
+         <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-6 col-md-4">     
+           <p class="form-groups__name">Серьезное НЯ?</p>   
+           <label class="radio-inline ">
+             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
+             </div>
+           </div> <!-- EOF: ROW -->
+           <div class="row row__margin-bottom">  <!-- START ROW -->
+            <div class="col-sm-12 col-md-8">
+             <p class="form-groups__name">Описание Серьезного Нежелательного Явления (СНЯ)</p>
+             <textarea class="form-control input_margin_bottom" rows="5" id="perenesenn_zabolevaniya" placeholder="Описание СНЯ"></textarea>    
+           </div>
+           <div class="col-sm-12  col-md-4">   
+            <p class="form-groups__name">Серьёнзное НЯ</p>
+            <select class="form-control">
+              <option>Не указано</option>
+              <option>Привело к смерти</option>
+              <option>Угрожает жизни</option>
+              <option>Требует стационарной госпитализации или продления её</option>
+              <option>Приводит к постоянной или значительной нетрудоспособности</option>
+              <option>Является врожденным отклонением или дефектом</option>
+              <option>Является важным явлением c медицинской точки зрения
+              </option>
+            </select>
+
+          </div> 
+        </div> <!-- EOF: ROW -->
+      </div> <!-- /BLOCK END -->
+      <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить НЯ</button>
+
+    </div>  <!-- /forma_regi_nejelat_yavl--wrapper -->
+    <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
+  </fieldset>
+
+
+
+
+
+
+<fieldset>
+  
+  <div class="row row__margin-bottom">  <!-- Start Row -->
+        <p class="form-groups__h1">Завершение исследования</p>
+
+ <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-12 block_radio_checkbox_2side_fix">     
+           <p class="form-groups__name">Как было завершено исследование?</p>   
+           <label class="radio-inline ">
+             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Завершение наблюдения в соответствии с протоколом</label> 
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Досрочное прекращение наблюдения</label>          
+             </div>
+           </div> <!-- EOF: ROW -->
+ <div class="row row__margin-bottom block__toggler show">  <!-- START ROW -->
+      <div class="col-md-12 ">
+          <div class="checkbox">
+          <label><input type="checkbox" > По инициативе пациента</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Исследователем принято решение, что пациента необходимо исключить в интересах самого пациента</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > По решению исследователя в связи с нежелательным явлением/серьезным нежелательным явлением</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > пНарушение протокола пациентом</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Пациент был включен с нарушением протокола</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Отклонение от протокола</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Положительный тест на беременность (для женщин)</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Досрочное прекращение исследования</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Другая причина</label>
+        </div>        
+           <div class="col-md-6">
+              <p class="form-groups__name">Причина прекращения</p>
+             <textarea class="textarea_toggler form-control show " rows="2" placeholder="описание"></textarea>
+           </div>
+      </div>
+          </div>  <!-- End Row -->
+</div> <!-- EOF: ROW -->
+</fieldset>
+
+
+
+
+
+
+
+
+  <p><button type="button" class="btn btn-primary btn__width-size__1 btn__distance center-block">Завершить</button></p>
+</form>
+
+
+
+
+</div>
+<div class="distance"></div>
+
+
+
+
+
+
+<div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+  <button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Шаг 1</button>
+  <button type="button" class="btn btn-primary btn-active">Шаг 2</button>
+  <button type="button" class="btn btn-default">Шаг 3</button>
+  <button type="button" class="btn btn-default">Шаг 4</button>
+  <button type="button" class="btn btn-default">Шаг 5</button>
+  <button type="button" class="btn btn-default">Шаг 6</button>
+  <button type="button" class="btn btn-default">Шаг 7</button>
+  <button type="button" class="btn btn-default">Шаг 8</button>
+</div>
+</div> <!-- /forms-wrapper -->
+
+
+
+
+<div class="footer container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="list-unstyled">
+        <li class="pull-right"><a href="#top">Back to top</a></li>
+        <li><a href="http://cyberplat.ru">ИРК Моксифлоксацин</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>  <!-- EOF: container -->
+</div>  <!-- /#content -->
+<script src="vendor/js/jquery.min.js"></script>
+<script src="vendor/js/bootstrap.min.js"></script>
+<script src="assets/js/controls.js"></script>
+
+
+<!--  <script>            Болванка для датапикера  Мемяцы и годы...
+(function(){
+          $('input').datepicker({
+                           format: "MM yyyy",
+                           startView: 1,
+                           minViewMode: 1,
+                           clearBtn: true,
+                           language: "ru",
+                           orientation: "bottom auto",
+                           multidate: false,
+                           multidateSeparator: false,
+                           autoclose: true,
+                           toggleActive: true
+                      });
+
+})();
+</script> -->
+</body>
+</html>
