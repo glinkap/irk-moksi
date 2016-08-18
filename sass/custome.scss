@@ -13,7 +13,7 @@
 
 
 // Заголовки
-.form-groups__h1 {font-size: 1.925em;font-weight: bold;text-align: center;padding: 30px 0 0px 0;}
+.form-groups__h1 {font-size: 1.925em;font-weight: bold;text-align: center;padding: 30px 0 0px 0; margin-bottom: 30px;}
 .form-groups__h2,legend {font-size: 1.325em;font-weight: bold;text-align: center;padding: 30px 0 0px 0; margin-bottom: 20px;}
 .form-groups__name{font-weight: bold;}
 
@@ -27,8 +27,9 @@ div.form-inline {margin-bottom: 20px;}
 .form-horizontal .radio, .form-horizontal .checkbox, .form-horizontal .radio-inline, .form-horizontal .checkbox-inline {margin-right: 10px}
 textarea {margin-top: 10px}
 label {margin-bottom: 10px} 
-
 @media screen and (max-width: 1200px) and (min-width:768px) {.label__horiz-vertical-type-combinate {padding-top: 0 !important;} }
+.form__top-distance {margin-top: 20px;}
+.block_radio_checkbox_2side_fix {margin: 0 10px; }
 
 //Переопределения bootstrap
 input[type="radio"]:after, .radio input[type="radio"]:after, .radio-inline input[type="radio"]:after,
@@ -36,9 +37,13 @@ input[type="radio"]:before, .radio input[type="radio"]:before, .radio-inline inp
 {top: -8px;margin-left: 5px}
 input[type="checkbox"]:after, .checkbox input[type="checkbox"]:after, .checkbox-inline input[type="checkbox"]:after {margin-left: 5px}
 input[type="checkbox"]:checked:before, .checkbox input[type="checkbox"]:checked:before, .checkbox-inline input[type="checkbox"]:checked:before {margin-left: 5px}
+select {margin-bottom: 10px;}
+
+
+
 // Кнопки
 .btn__width-size__1 {min-width: 250px;} 
-
+.btn__distance {margin: 20px auto;}
 
 
 /*Pseudo Table*/

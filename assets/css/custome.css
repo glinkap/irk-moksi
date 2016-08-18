@@ -28,7 +28,8 @@
   font-size: 1.925em;
   font-weight: bold;
   text-align: center;
-  padding: 30px 0 0px 0; }
+  padding: 30px 0 0px 0;
+  margin-bottom: 30px; }
 
 .form-groups__h2, legend {
   font-size: 1.325em;
@@ -70,6 +71,12 @@ label {
   .label__horiz-vertical-type-combinate {
     padding-top: 0 !important; } }
 
+.form__top-distance {
+  margin-top: 20px; }
+
+.block_radio_checkbox_2side_fix {
+  margin: 0 10px; }
+
 input[type="radio"]:after, .radio input[type="radio"]:after, .radio-inline input[type="radio"]:after,
 input[type="radio"]:before, .radio input[type="radio"]:before, .radio-inline input[type="radio"]:before {
   top: -8px;
@@ -81,8 +88,14 @@ input[type="checkbox"]:after, .checkbox input[type="checkbox"]:after, .checkbox-
 input[type="checkbox"]:checked:before, .checkbox input[type="checkbox"]:checked:before, .checkbox-inline input[type="checkbox"]:checked:before {
   margin-left: 5px; }
 
+select {
+  margin-bottom: 10px; }
+
 .btn__width-size__1 {
   min-width: 250px; }
+
+.btn__distance {
+  margin: 20px auto; }
 
 /*Pseudo Table*/
 .table-pseudo {
