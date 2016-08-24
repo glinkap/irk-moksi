@@ -141,5 +141,11 @@ select {
   margin-left: 30px; }
 
 /*/Pseudo Table*/
+.form--wrapper__sign_in {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  margin-top: 16vh; }
 
 /*# sourceMappingURL=maps/custome.css.map */
