@@ -731,8 +731,19 @@
                <option>Нет сведений</option>
              </select>
            </div>
-         </div> <!-- EOF: ROW -->
-         <div class="row row__margin-bottom">  <!-- START ROW -->
+         </div> <!-- EOF: ROW -->          
+      </div> <!-- /BLOCK END -->
+      <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить НЯ</button>
+
+    </div>  <!-- /forma_regi_nejelat_yavl--wrapper -->
+    <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
+  </fieldset>
+
+
+
+    <!-- ++++++++++++++++++++++++++++     START ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
+    <fieldset>
+    <div class="row row__margin-bottom">  <!-- START ROW -->
           <div class="col-sm-6 col-md-4">     
            <p class="form-groups__name">Серьезное НЯ?</p>   
            <label class="radio-inline ">
@@ -741,35 +752,29 @@
                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
              </div>
            </div> <!-- EOF: ROW -->
-          
-      </div> <!-- /BLOCK END -->
-      <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить НЯ</button>
-
-    </div>  <!-- /forma_regi_nejelat_yavl--wrapper -->
-    <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
-  </fieldset>
-    <!-- ++++++++++++++++++++++++++++     START ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
-    <fieldset>
+ <div class="forma_regi_seryezni_nejelat_yavl--wrapper show">
  <div class="row row__margin-bottom">  <!-- START ROW -->
-            <div class="col-sm-12 col-md-8">
-             <p class="form-groups__name">Описание Серьезного Нежелательного Явления (СНЯ)</p>
-             <textarea class="form-control input_margin_bottom" rows="5" id="perenesenn_zabolevaniya" placeholder="Описание СНЯ"></textarea>    
-           </div>
-           <div class="col-sm-12  col-md-4">   
-            <p class="form-groups__name">Серьёнзное НЯ</p>
-            <select class="form-control">
-              <option>Не указано</option>
-              <option>Привело к смерти</option>
-              <option>Угрожает жизни</option>
-              <option>Требует стационарной госпитализации или продления её</option>
-              <option>Приводит к постоянной или значительной нетрудоспособности</option>
-              <option>Является врожденным отклонением или дефектом</option>
-              <option>Является важным явлением c медицинской точки зрения
-              </option>
-            </select>
-
-          </div> 
-        </div> <!-- EOF: ROW -->
+              <div class="col-sm-12 col-md-8">
+               <p class="form-groups__name">Описание Серьезного Нежелательного Явления (СНЯ)</p>
+               <textarea class="form-control input_margin_bottom" rows="5" id="perenesenn_zabolevaniya" placeholder="Описание СНЯ"></textarea>    
+             </div>
+             <div class="col-sm-12  col-md-4">   
+              <p class="form-groups__name">Серьёнзное НЯ</p>
+              <select class="form-control">
+                <option>Не указано</option>
+                <option>Привело к смерти</option>
+                <option>Угрожает жизни</option>
+                <option>Требует стационарной госпитализации или продления её</option>
+                <option>Приводит к постоянной или значительной нетрудоспособности</option>
+                <option>Является врожденным отклонением или дефектом</option>
+                <option>Является важным явлением c медицинской точки зрения
+                </option>
+              </select>
+   
+            </div> 
+          </div> <!-- EOF: ROW -->
+          <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить НЯ</button>
+          </div> <!--  /forma_regi_seryezni_nejelat_yavl--wrapper -->
     </fieldset>
     <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
 
@@ -883,22 +888,5 @@
 <script src="assets/js/controls.js"></script>
 
 
-<!--  <script>            Болванка для датапикера  Мемяцы и годы...
-(function(){
-          $('input').datepicker({
-                           format: "MM yyyy",
-                           startView: 1,
-                           minViewMode: 1,
-                           clearBtn: true,
-                           language: "ru",
-                           orientation: "bottom auto",
-                           multidate: false,
-                           multidateSeparator: false,
-                           autoclose: true,
-                           toggleActive: true
-                      });
-
-})();
-</script> -->
 </body>
 </html>
