@@ -7,8 +7,6 @@
 .forms--vizit0--stages-menu {}
 .forms--vizit--stage-wrapper {margin-top: 20px}
 .distance {height: 50px;}
-.input_margin_bottom {margin-bottom: 20px}
-.row__margin-bottom {margin-bottom: 20px;}
 
 
 
@@ -30,6 +28,8 @@ label {margin-bottom: 10px}
 @media screen and (max-width: 1200px) and (min-width:768px) {.label__horiz-vertical-type-combinate {padding-top: 0 !important;} }
 .form__top-distance {margin-top: 20px;}
 .block_radio_checkbox_2side_fix {margin: 0 10px; }
+.input_margin_bottom {margin-bottom: 20px}
+.row__margin-bottom {margin-bottom: 20px;}
 
 //Переопределения bootstrap
 input[type="radio"]:after, .radio input[type="radio"]:after, .radio-inline input[type="radio"]:after,
