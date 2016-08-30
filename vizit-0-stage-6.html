@@ -77,313 +77,163 @@
           <button type="button" class="btn btn-default">Шаг 8</button>
         </div>
 
-        <form class="form-horizontal">
+
+ 
+ <form class="form-horizontal">
+<div class="form-groups__h2">Тест на беременность</div>
+<div class="row row__margin-bottom">
+  <div class="col-sm-12 checkbox">
+    <label>
+      <input type="checkbox" checked> Не применимо
+    </label>
+  </div>
+</div>
+<fieldset disabled>
+  <div class="form-groups__name">Результат теста</div>
+  <div class="row row__margin-bottom">  <!-- Start Row -->
+   <div class="col-sm-7">
+     <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Положительный</label>
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Отрицательный
+    </label>    
+  </div>
+  <div class="col-sm-5">
+    <div class="form-group">
+      <label class="control-label col-sm-6 1label__horiz-vertical-type-combinate" for="data-vizita1">Дата проведения</label>
+      <div class="col-sm-6">
+        <input type="date" class="form-control col-sm-6" id="data-vizita1" >
+      </div>
+    </div>
+  </div>         
+</div>  <!-- End Row -->
+
+</fieldset>
+ </form>
+ <form class="form-horizontal"> 
+<p class="form-groups__h1">Критерии включения</p>
+<p class="form-groups__h2">Ответы на вопросы должны быть ДА</p>
+<p class="form-groups__name">Если хотя бы 1 ответ НЕТ, пациент не может быть включен в исследование</p>
+
+<div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">Письменное информированное согласие пациента на участие в исследовании</p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+ <div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">Возраст пациента  18 лет и ≤ 65 лет</p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+  <div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">
+Диагноз ВП при наличии у больного рентгенологически подтвержденной очаговой инфильтрации легочной ткани и, по крайней мере, двух клинических признаков из числа следующих:
+<ul>
+  <li>
+    <p class="">
+острая лихорадка на момент проведения скрининга (температура тела >38,0°С);
+    </p>
+  </li>
+  <li>
+    <p class="">
+кашель с мокротой;
+    </p>
+  </li>
+  <li>
+    <p class="">
+физические признаки (фокус крепитации и/или мелкопузырчатые хрипы, бронхиальное дыхание, укорочение перкуторного звука);
+    </p>
+  </li>
+  <li>
+    <p class="">
+лейкоцитоз >10 × 109/л и/или палочкоядерный сдвиг (>10%)
+    </p>
+  </li>
+</ul>
+  </p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+<div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">
+Степень тяжести ВП, предполагающая проведение парентеральной антибактериальной терапии в условиях стационара
+  </p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+<div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">
+Наличие биологического материала для проведения микробиологических исследований на скрининге
+  </p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+ <div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">
+Пациент способен понимать процедуры исследования, а также адекватно сотрудничать с персоналом
+  </p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+ <div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">
+Отрицательный тест на беременность у женщин детородного возраста, проведенный на скрининге
+  </p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+ <div class="row row__margin-bottom"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">
+Пациенты мужского пола должны быть согласны использовать барьерные методы контрацепции на протяжении всего исследования
+  </p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
+ <div class="row row__margin-bottom1"> <!--  START ROW -->
+  <div class="col-sm-9"><p class="">
+Женщины детородного возраста, если они не являются хирургически стериль-ными или находящимися в постменопаузе, должны быть согласны придержи-ваться барьерных методов контрацепции на протяжении всего исследования
+  </p> </div>
+  <div class="col-sm-3">
+    <label class="radio-inline">
+      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+      <label class="radio-inline">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> </div>
+ </div> <!-- EOF: ROW -->
 
 
 
-          <!--              START STAGE 6              -->  
-          <fieldset>
-            <p class="form-groups__h1">Микробиологическая диагностика</p>
-            <p class="form-groups__h2">Микроскопический анализ мокроты</p>
-            <div class="row "> <!-- Start Row -->
-              <div class="col-xs-8 col-sm-12">
-               <div class="form-group">
-                <label for="reqwreq" class=" col-sm-6 control-label">Дата проведения</label>
-                <div class=" col-sm-4 col-md-2 ">
-                  <input type="date" class="form-control" id="reqwreq" placeholder="Password">
-                </div>
-              </div>
-            </div>
-          </div>  <!-- End Row -->
-          <div class="table-pseudo table-pseudo__striped table-pseudo__hover">
-            <div class="table-pseudo__row">
-              <div class="row table-pseudo__row-header">      
-                <div class="col-xs-3">Параметр</div>
-                <div class="col-xs-3">Результат</div>      
-                <div class="col-xs-3">Единицы</div>      
-                <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>      
-              </div>
-            </div> 
-            <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Эпителиальные клетки</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Альвеолярные макрофаги</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Эритроциты</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Лейкоциты</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Нейтрофилы</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Лимфоциты</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Эозинофилы</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Пневмококки</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Диплококки Френкеля</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Бактерии Фридлендера</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Стрептококки</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
-              <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Стафилококки</p> </div>       
-               </div>
-               <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-xs-3">        
-                <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" >
-                </div>
-              </div>
-              <div class="col-sm-3 ">
-                <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
-                </div>
-              </div> 
-            </div>
-          </div> <!-- EOF: PSEUDO ROW -->
-          
 
-
-</div> 
-</div> 
-</fieldset> 
-<p>
-  <button type="button" class="btn btn-primary btn__width-size__1 center-block">Далее</button>
-</p>
-</form>
-
-
-<!--              EOF: STAGE 6              -->    
+<p><button type="button" class="btn btn-primary btn__width-size__1 center-block">Далее</button></p>
 
 
 
+
+
+ </form>
 
 </div>
 <div class="distance"></div>
@@ -408,7 +258,7 @@
 
 
 
-<div class="footer">
+<div class="footer container-fluid">
   <div class="row">
     <div class="col-lg-12">
       <ul class="list-unstyled">
@@ -425,5 +275,22 @@
 <script src="assets/js/controls.js"></script>
 
 
+<!--  <script>            Болванка для датапикера  Мемяцы и годы...
+(function(){
+          $('input').datepicker({
+                           format: "MM yyyy",
+                           startView: 1,
+                           minViewMode: 1,
+                           clearBtn: true,
+                           language: "ru",
+                           orientation: "bottom auto",
+                           multidate: false,
+                           multidateSeparator: false,
+                           autoclose: true,
+                           toggleActive: true
+                      });
+
+})();
+</script> -->
 </body>
 </html>

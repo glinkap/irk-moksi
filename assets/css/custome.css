@@ -18,12 +18,6 @@
 .distance {
   height: 50px; }
 
-.input_margin_bottom {
-  margin-bottom: 20px; }
-
-.row__margin-bottom {
-  margin-bottom: 20px; }
-
 .form-groups__h1 {
   font-size: 1.925em;
   font-weight: bold;
@@ -40,7 +34,8 @@
 
 .form-groups__name {
   font-weight: bold;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .input-name-inline, .help-block-inline {
   display: inline-block;
@@ -77,6 +72,12 @@ label {
 
 .block_radio_checkbox_2side_fix {
   margin: 0 10px; }
+
+.input_margin_bottom {
+  margin-bottom: 20px; }
+
+.row__margin-bottom {
+  margin-bottom: 20px; }
 
 input[type="radio"]:after, .radio input[type="radio"]:after, .radio-inline input[type="radio"]:after,
 input[type="radio"]:before, .radio input[type="radio"]:before, .radio-inline input[type="radio"]:before {
