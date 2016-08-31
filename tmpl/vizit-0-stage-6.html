@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Индивидуальная регистрационная карта</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" href="../assets/css/irk-moksi.css" media="screen">
+	<link rel="stylesheet" href="../assets/css/glyphicons.css" media="screen">
+	<link rel="stylesheet" href="../assets/css/custome.css" media="screen">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css"  />
+  <script src="/vendor/js/html5shiv.min.js"></script>
+  <script src="/vendor/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="left-sidebar">
+	<div class="navbar navbar-inverse navbar-fixed-top ">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button id="toggle" class="navbar-toggle no-collapse pull-left" type="button">
+					<span class="glyphicon glyphicon-menu-hamburger"></span>
+				</button>
+				<a href="http://www.sqlab.ru/cgi-bin/test.cgi" class="navbar-brand">ИРК Моксифлоксацин</a>
+				<p class="navbar-text">Визиты</p>
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+					<span class="ic-lockoff"></span>
+				</button>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper toggled">
+		<!-- Sidebar -->
+		<div class="sidebar-left">
+			<a href="#" class="logo-cyberplat-ink"></a>
+			<ul class="nav accordion">
+				<li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+				<li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+				<li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+				<li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+				<li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+				<li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+				<li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+			</ul>
+		</div>
+		<!-- /Sidebar -->
+
+		<!-- Page Content -->
+		<div class="content">
+			<div class="container">
+				<div class="forms-wrapper">
+					<!-- Standard button -->
+					<div class="stage-nav-bar text-center btn-second-line-step">
+						<button type="button" class="btn btn-primary btn-active"><span class="glyphicon glyphicon-ok"></span> Визит 0</button>
+						<button type="button" class="btn btn-default">Визит 1</button>
+						<button type="button" class="btn btn-default">Визит 2</button>
+						<button type="button" class="btn btn-default">Визит 3</button>
+						<button type="button" class="btn btn-default">Визит 4</button>
+						<button type="button" class="btn btn-default" disabled="disabled">Визит 5</button>
+						<!--<button type="button" class="btn btn-default" disabled="disabled">Нежелательные явления</button>
+           <button type="button" class="btn btn-default" disabled="disabled">Сопутствующая терапия</button>-->
+						<button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
+					</div>
+					<h1 class="forms--h1">Визит 0</h1>
+					<div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+						<button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Шаг 1</button>
+						<button type="button" class="btn btn-primary btn-success">Шаг 2</button>
+						<button type="button" class="btn btn-primary btn-success">Шаг 3</button>
+						<button type="button" class="btn btn-primary btn-success">Шаг 4</button>
+						<button type="button" class="btn btn-primary btn-success">Шаг 5</button>
+						<button type="button" class="btn btn-primary btn-success">Шаг 6</button>
+						<button type="button" class="btn btn-default">Шаг 7</button>
+					</div>
+
+
+
+					<form class="form-horizontal" action="http://www.sqlab.ru/cgi-bin/test.cgi" method="POST">
+						<input type="hidden" name="protocol" value="050/14">
+						<input type="hidden" name="center_number" value="[% center_number %]">
+						<input type="hidden" name="patient_number" value="[% patient_number %]">
+						<input type="hidden" name="patient_initials" value="[% patient_initials %]">
+						<input type="hidden" name="vizit" value="vizit1">
+						<input type="hidden" name="next" value="vizit0_stage7">
+
+						<div class="form-groups__h2">Тест на беременность</div>
+						<div class="row row__margin-bottom">
+							<div class="col-sm-12 checkbox">
+								<label>
+									<input type="checkbox" checked> Не применимо
+								</label>
+							</div>
+						</div>
+						<fieldset disabled>
+							<div class="form-groups__name">Результат теста</div>
+							<div class="row row__margin-bottom">
+								<!-- Start Row -->
+								<div class="col-sm-7">
+									<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Положительный</label>
+									<label class="radio-inline">
+										<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Отрицательный
+									</label>
+								</div>
+								<div class="col-sm-5">
+									<div class="form-group">
+										<label class="control-label col-sm-6 1label__horiz-vertical-type-combinate" for="data-vizita1">Дата проведения</label>
+										<div class="col-sm-6">
+											<input type="date" class="form-control col-sm-6" id="data-vizita1">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End Row -->
+
+						</fieldset>
+				<fieldset>
+						<p class="form-groups__h1">Критерии включения</p>
+						<p class="form-groups__h2">Ответы на вопросы должны быть ДА</p>
+						<p class="form-groups__name">Если хотя бы 1 ответ НЕТ, пациент не может быть включен в исследование</p>
+
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">Письменное информированное согласие пациента на участие в исследовании</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">Возраст пациента  18 лет и ≤ 65 лет</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">
+									Диагноз ВП при наличии у больного рентгенологически подтвержденной очаговой инфильтрации легочной ткани и, по крайней мере, двух клинических признаков из числа следующих:
+									<ul>
+										<li>
+											<p class="">
+												острая лихорадка на момент проведения скрининга (температура тела >38,0°С);
+											</p>
+										</li>
+										<li>
+											<p class="">
+												кашель с мокротой;
+											</p>
+										</li>
+										<li>
+											<p class="">
+												физические признаки (фокус крепитации и/или мелкопузырчатые хрипы, бронхиальное дыхание, укорочение перкуторного звука);
+											</p>
+										</li>
+										<li>
+											<p class="">
+												лейкоцитоз >10 × 109/л и/или палочкоядерный сдвиг (>10%)
+											</p>
+										</li>
+									</ul>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">
+									Степень тяжести ВП, предполагающая проведение парентеральной антибактериальной терапии в условиях стационара
+								</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">
+									Наличие биологического материала для проведения микробиологических исследований на скрининге
+								</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">
+									Пациент способен понимать процедуры исследования, а также адекватно сотрудничать с персоналом
+								</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">
+									Отрицательный тест на беременность у женщин детородного возраста, проведенный на скрининге
+								</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">
+									Пациенты мужского пола должны быть согласны использовать барьерные методы контрацепции на протяжении всего исследования
+								</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						<div class="row row__margin-bottom1">
+							<!--  START ROW -->
+							<div class="col-sm-9">
+								<p class="">
+									Женщины детородного возраста, если они не являются хирургически стериль-ными или находящимися в постменопаузе, должны быть согласны придержи-ваться барьерных методов контрацепции на протяжении всего исследования
+								</p>
+							</div>
+							<div class="col-sm-3">
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+								<label class="radio-inline">
+									<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+							</div>
+						</div>
+						<!-- EOF: ROW -->
+						</fieldset>
+						<p><button type="submit" class="btn btn-primary btn__width-size__1 center-block btn__distance">Далее</button></p>
+
+					</form>
+
+				</div>
+				<div class="distance"></div>
+
+
+
+
+
+
+				<div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+					<button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Шаг 1</button>
+					<button type="button" class="btn btn-primary btn-success">Шаг 2</button>
+					<button type="button" class="btn btn-primary btn-success">Шаг 3</button>
+					<button type="button" class="btn btn-primary btn-success">Шаг 4</button>
+					<button type="button" class="btn btn-primary btn-success">Шаг 5</button>
+					<button type="button" class="btn btn-primary btn-active">Шаг 6</button>
+					<button type="button" class="btn btn-default">Шаг 7</button>
+				</div>
+			</div>
+			<!-- /forms-wrapper -->
+
+
+
+
+			<div class="footer container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<ul class="list-unstyled">
+							<li class="pull-right"><a href="#top">Back to top</a></li>
+							<li><a href="http://www.sqlab.ru/cgi-bin/test.cgi">ИРК Моксифлоксацин</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- EOF: container -->
+	</div>
+	<!-- /#content -->
+	<script src="../vendor/js/jquery.min.js"></script>
+	<script src="../vendor/js/bootstrap.min.js"></script>
+	<script src="../assets/js/controls.js"></script>
+
+
+</body>
+
+</html>
