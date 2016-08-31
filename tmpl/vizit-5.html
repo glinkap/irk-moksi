@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Индивидуальная регистрационная карта</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="/assets/css/irk-moksi.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/glyphicons.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/custome.css" media="screen">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css"  />
+  <script src="/vendor/js/html5shiv.min.js"></script>
+  <script src="/vendor/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="left-sidebar">
+  <div class="navbar navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button id="toggle" class="navbar-toggle no-collapse pull-left" type="button">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a href="[% action_url %]" class="navbar-brand">ИРК Моксифлоксацин</a>
+        <p class="navbar-text">Визиты</p>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="ic-lockoff"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper toggled">
+    <!-- Sidebar -->
+    <div class="sidebar-left">
+      <a href="#" class="logo-cyberplat-ink"></a>
+      <ul class="nav accordion">
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+      </ul>
+    </div>
+    <!-- /Sidebar -->
+
+    <!-- Page Content -->
+    <div class="content">
+      <div class="container">
+       <div class="forms-wrapper">         <!-- Standard button -->
+         <div class="stage-nav-bar text-center btn-second-line-step">
+           <button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Визит 0</button>
+           <button type="button" class="btn btn-primary btn-success">Визит 1</button>
+           <button type="button" class="btn btn-primary btn-success">Визит 2</button>
+           <button type="button" class="btn btn-primary btn-success">Визит 3</button>
+           <button type="button" class="btn btn-primary btn-success">Визит 4</button>
+           <button type="button" class="btn btn-primary btn-active">Визит 5</button>
+           <!--<button type="button" class="btn btn-default" disabled="disabled">Нежелательные явления</button>
+           <button type="button" class="btn btn-default" disabled="disabled">Сопутствующая терапия</button>-->
+           <button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
+         </div>
+         <h1 class="forms--h1">Визит 5</h1>  
+         <div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+          <!--<button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Шаг 1</button>
+          <button type="button" class="btn btn-primary btn-active">Шаг 2</button>
+          <button type="button" class="btn btn-default">Шаг 3</button>
+          <button type="button" class="btn btn-default">Шаг 4</button>
+          <button type="button" class="btn btn-default">Шаг 5</button>
+          <button type="button" class="btn btn-default">Шаг 6</button>
+          <button type="button" class="btn btn-default">Шаг 7</button>
+          <button type="button" class="btn btn-default">Шаг 8</button>-->
+        </div>
+
+        <form class="form-horizontal form__top-distance" action="[% action_url %]" method="POST">
+		<input type="hidden" name="protocol" value="050/14">
+		<input type="hidden" name="center_number" value="[% center_number %]">
+		<input type="hidden" name="patient_number" value="[% patient_number %]">
+		<input type="hidden" name="patient_initials" value="[% patient_initials %]">
+		<input type="hidden" name="vizit" value="vizit5">
+		<fieldset>        
+            <div class="row "> <!-- Start Row -->
+              <div class="col-xs-8 col-sm-12">
+               <div class="form-group">
+                <label for="date_of_vizit" class=" col-xs-12 col-sm-6 control-label">Дата визита</label>
+                <div class=" col-sm-3 col-xs-8">
+                  <input type="date" class="form-control" id="date_of_vizit" placeholder="ДД/ММ/ГГГГ" name="date_of_vizit" value="[% date_of_vizit %]">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+          
+          <p class="form-groups__h1">Жизненно-Важные Показатели</p>
+          <div class="row">            
+            <div class="input_margin_bottom col-sm-3">
+              <label class="" for="body_temperature">Температура тела:</label>
+              <input type="text" class="form-control" id="body_temperature" placeholder="&deg;С" name="body_temperature" value="[% body_temperature %]">
+            </div>
+          </div>
+          <div class="row">
+            <div class="input_margin_bottom col-sm-3">
+              <label class="" for="heart_rate">ЧСС</label>             
+              <input type="text" class="form-control" id="heart_rate" placeholder="уд/мин" name="heart_rate" value="[% heart_rate %]">
+              <span class="help-block">В покое</span>  
+            </div>
+            <div class="input_margin_bottom col-sm-3">
+              <label class="" for="respiratory_rate">ЧДД</label>             
+              <input type="text" class="form-control" id="vozrast" placeholder="в мин" name="respiratory_rate" value="[% respiratory_rate %]">              
+            </div>
+            <label class="col-sm-6" for="systolic_blood_pressure">Артериальное давление (В положении сидя)</label>
+            <div class="input_margin_bottom col-sm-3 ">             
+              <input type="text" class="form-control double-field1" id="systolic_blood_pressure" placeholder="мм рт.ст." name="systolic_blood_pressure" value="[% systolic_blood_pressure %]">
+              <span class="help-block">Cистолическое</span>                     
+            </div>
+            <div class="input_margin_bottom col-sm-3 "> 
+              <input type="text" class="form-control double-field1" id="diastolic_blood_pressure" placeholder="мм рт.ст." name="diastolic_blood_pressure" value="[% diastolic_blood_pressure %]">
+              <span class="help-block">Диастолическое</span>           
+            </div>
+          </div> 
+        </fieldset>     
+        <fieldset>
+         <p class="form-groups__h1">Данные Физикального Обследования</p>
+         <div class="row row__margin-bottom">  <!-- Start Row -->
+           <div class="col-sm-7">
+             <p class="form-groups__name">Кожные покровы, мягкие ткани, кости и суставы</p>
+             <label class="radio-inline">
+              <input type="radio" name="coverlet__soft_tissues__bones__articulations" id="inlineRadio1" value="Не проведено" [%IF coverlet__soft_tissues__bones__articulations=='Не проведено' %]checked[% END %]> Не проведено
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="coverlet__soft_tissues__bones__articulations" id="inlineRadio2" value="Норма" [%IF coverlet__soft_tissues__bones__articulations=='Норма' %]checked[% END %]> Норма
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="coverlet__soft_tissues__bones__articulations" id="inlineRadio3" value="Клинически незначимое" [%IF coverlet__soft_tissues__bones__articulations=='Клинически незначимое' %]checked[% END %]> Клинически незначимое
+            </label>
+            <label class="radio-inline">
+              <input type="radio" name="coverlet__soft_tissues__bones__articulations" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF coverlet__soft_tissues__bones__articulations=='Клинически значимое' %]checked[% END %]> Клинически значимое
+            </label>
+          </div>
+          <div class="col-sm-5">
+            <p class="form-groups__name">Клинически значимое (описание)</p>
+            <textarea name="coverlet__soft_tissues__bones__articulations__comments" class="textarea_toggler form-control show" rows="2" placeholder="описание">[% coverlet__soft_tissues__bones__articulations__comments %]</textarea>
+          </div> 
+        </div>  <!-- End Row -->
+        <div class="row row__margin-bottom">  <!-- Start Row -->
+         <div class="col-sm-7">
+           <p class="form-groups__name">Лимфатические узлы</p>
+           <label class="radio-inline">
+            <input type="radio" name="lymph_nodes" id="inlineRadio1" value="Не проведено" [%IF lymph_nodes=="Не проведено" %]checked[% END %]> Не проведено
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="lymph_nodes" id="inlineRadio2" value="Норма" [%IF lymph_nodes=="Норма" %]checked[% END %]> Норма
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="lymph_nodes" id="inlineRadio3" value="Клинически незначимое" [%IF lymph_nodes=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="lymph_nodes" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF lymph_nodes=="Клинически значимое" %]checked[% END %]> Клинически значимое
+          </label>
+        </div>
+        <div class="col-sm-5">
+          <textarea name="lymph_nodes__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% lymph_nodes__comments %]</textarea>
+        </div> 
+      </div>  <!-- End Row -->
+      <div class="row row__margin-bottom">  <!-- Start Row -->
+       <div class="col-sm-7">
+         <p class="form-groups__name">Дыхательная система</p>
+         <label class="radio-inline">
+          <input type="radio" name="respiratory_tracts" id="inlineRadio1" value="Не проведено" [%IF respiratory_tracts=="Не проведено" %]checked[% END %]> Не проведено
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="respiratory_tracts" id="inlineRadio2" value="Норма" [%IF respiratory_tracts=="Норма" %]checked[% END %]> Норма
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="respiratory_tracts" id="inlineRadio3" value="Клинически незначимое" [%IF respiratory_tracts=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="respiratory_tracts" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF respiratory_tracts=="Клинически значимое" %]checked[% END %]> Клинически значимое
+        </label>
+      </div>
+      <div class="col-sm-5">
+        <textarea name="respiratory_tracts__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% respiratory_tracts__comments %]</textarea>
+      </div> 
+    </div>  <!-- End Row -->
+    <div class="row row__margin-bottom">  <!-- Start Row -->
+     <div class="col-sm-7">
+       <p class="form-groups__name">Сердечно-сосудистая система</p>
+       <label class="radio-inline">
+        <input type="radio" name="cardiovascular_system" id="inlineRadio1" value="Не проведено" [%IF cardiovascular_system=="Не проведено" %]checked[% END %]> Не проведено
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="cardiovascular_system" id="inlineRadio2" value="Норма" [%IF cardiovascular_system=="Норма" %]checked[% END %]> Норма
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="cardiovascular_system" id="inlineRadio3" value="Клинически незначимое" [%IF cardiovascular_system=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="cardiovascular_system" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF cardiovascular_system=="Клинически значимое" %]checked[% END %]> Клинически значимое
+      </label>
+    </div>
+    <div class="col-sm-5">
+      <textarea name="cardiovascular_system__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% cardiovascular_system__comments %]</textarea>
+    </div> 
+  </div>  <!-- End Row -->
+  <div class="row row__margin-bottom">  <!-- Start Row -->
+   <div class="col-sm-7">
+     <p class="form-groups__name">Желудочно-кишечный тракт</p>
+     <label class="radio-inline">
+      <input type="radio" name="gastrointestinal_tract" id="inlineRadio1" value="Не проведено" [%IF gastrointestinal_tract=="Не проведено" %]checked[% END %]> Не проведено
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="gastrointestinal_tract" id="inlineRadio2" value="Норма" [%IF gastrointestinal_tract=="Норма" %]checked[% END %]> Норма
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="gastrointestinal_tract" id="inlineRadio3" value="Клинически незначимое" [%IF gastrointestinal_tract=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="gastrointestinal_tract" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF gastrointestinal_tract=="Клинически значимое" %]checked[% END %]> Клинически значимое
+    </label>
+  </div>
+  <div class="col-sm-5">
+    <textarea name="gastrointestinal_tract__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% gastrointestinal_tract__comments %]</textarea>
+  </div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Мочеполовая система</p>
+   <label class="radio-inline">
+    <input type="radio" name="urogenital_system" id="inlineRadio1" value="Не проведено" [%IF urogenital_system=="Не проведено" %]checked[% END %]> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="urogenital_system" id="inlineRadio2" value="Норма" [%IF urogenital_system=="Норма" %]checked[% END %]> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="urogenital_system" id="inlineRadio3" value="Клинически незначимое" [%IF urogenital_system=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="urogenital_system" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF urogenital_system=="Клинически значимое" %]checked[% END %]> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% urogenital_system__comments %]</textarea>
+</div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Эндокринная система</p>
+   <label class="radio-inline">
+    <input type="radio" name="endocrine_system" id="inlineRadio1" value="Не проведено" [%IF endocrine_system=="Не проведено" %]checked[% END %]> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="endocrine_system" id="inlineRadio2" value="Норма" [%IF endocrine_system=="Норма" %]checked[% END %]> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="endocrine_system" id="inlineRadio3" value="Клинически незначимое" [%IF endocrine_system=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="endocrine_system" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF endocrine_system=="Клинически значимое" %]checked[% END %]> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea name="endocrine_system__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% endocrine_system__comments %]</textarea>
+</div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Скелетно-мышечная система</p>
+   <label class="radio-inline">
+    <input type="radio" name="musculoskeletal_system" id="inlineRadio1" value="Не проведено" [%IF musculoskeletal_system=="Не проведено" %]checked[% END %]> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="musculoskeletal_system" id="inlineRadio2" value="Норма" [%IF musculoskeletal_system=="Норма" %]checked[% END %]> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="musculoskeletal_system" id="inlineRadio3" value="Клинически незначимое" [%IF musculoskeletal_system=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="musculoskeletal_system" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF musculoskeletal_system=="Клинически значимое" %]checked[% END %]> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea name="musculoskeletal_system__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% musculoskeletal_system__comments %]</textarea>
+</div> 
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Нервно-психический статус</p>
+   <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio1" value="Не проведено" [%IF neuropsychiatric_status=="Не проведено" %]checked[% END %]> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio2" value="Норма" [%IF neuropsychiatric_status=="Норма" %]checked[% END %]> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio3" value="Клинически незначимое" [%IF neuropsychiatric_status=="Клинически незначимое" %]checked[% END %]> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF neuropsychiatric_status=="Клинически значимое" %]checked[% END %]> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea name="neuropsychiatric_status__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% neuropsychiatric_status__comments %]</textarea>
+</div> 
+</div>  <!-- End Row -->
+</fieldset>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset> 
+  <p class="form-groups__h1">Данные лабораторно-инструментального обследования</p>
+  <p class="form-groups__h2">Биохимический анализ крови</p>  
+  <div class="row "> <!-- Start Row -->
+    <div class="col-xs-8 col-sm-12">
+     <div class="form-group ">
+      <label for="date_of_biochemical_blood_test" class="col-sm-6 control-label">Дата проведения</label>
+      <div class="col-sm-4">
+        <input type="date" class="form-control" id="date_of_biochemical_blood_test" placeholder="ДД/ММ/ГГГГ" name="date_of_biochemical_blood_test" value="[% date_of_biochemical_blood_test %]">
+      </div>
+    </div>
+  </div>
+</div>  <!-- End Row -->
+<div class="table-pseudo table-pseudo__striped table-pseudo__hover">
+  <div class="table-pseudo__row">
+    <div class="row table-pseudo__row-header">
+      <div class="col-xs-3">Параметр</div>
+      <div class="col-xs-3">Результат</div>
+      <div class="col-xs-3">Единицы</div>
+      <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>
+    </div>
+  </div> 
+  <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+    <div class="row">
+      <div class="col-xs-3">        
+       <div class="table-pseudo__1col_content-wrapper"><p>Креатинин</p> </div>
+     </div>
+     <div class="col-xs-3">        
+      <div class="table-pseudo__input-col_content-wrapper">
+        <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_creatinine_result" value="[% biochemical_blood_test_creatinine_result %]">
+      </div>
+    </div>
+    <div class="col-xs-3">        
+      <div class="table-pseudo__input-col_content-wrapper">
+        <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_creatinine_result" value="[% biochemical_blood_test_creatinine_result %]">
+      </div>
+    </div>
+    <div class="col-sm-3 ">
+      <div class="table-pseudo__checkbox-col_content-wrapper">
+        <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+      </div>
+    </div> 
+  </div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>Калий</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_potassium_result" value="[% biochemical_blood_test_potassium_result %]">
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_potassium_units" value="[% biochemical_blood_test_potassium_units %]">
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>Натрий</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_sodium_result" value="[% biochemical_blood_test_sodium_result %]">
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_sodium_units" value="[% biochemical_blood_test_sodium_units %]">
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>АлAТ</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_alanine_aminotransferase_result" value="[% biochemical_blood_test_alanine_aminotransferase_result %]">
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_alanine_aminotransferase_units" value="[% biochemical_blood_test_alanine_aminotransferase_units %]">
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>АcAТ</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_aspartate_aminotransferase_result" value="[% biochemical_blood_test_aspartate_aminotransferase_result %]">
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_aspartate_aminotransferase_units" value="[% biochemical_blood_test_aspartate_aminotransferase_units %]">
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+<div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+  <div class="row">
+    <div class="col-xs-3">        
+     <div class="table-pseudo__1col_content-wrapper"><p>Мочевина</p> </div>       
+   </div>
+   <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_urea_result" value="[% biochemical_blood_test_urea_result %]">
+    </div>
+  </div>
+  <div class="col-xs-3">        
+    <div class="table-pseudo__input-col_content-wrapper">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_urea_units" value="[% biochemical_blood_test_urea_units %]">
+    </div>
+  </div>
+  <div class="col-sm-3 ">
+    <div class="table-pseudo__checkbox-col_content-wrapper">
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+    </div>
+  </div> 
+</div>
+</div> <!-- EOF: PSEUDO ROW -->
+</div>
+</fieldset>
+
+
+
+
+<fieldset>
+            <p class="form-groups__h2">Общий анализ мочи</p>
+            <div class="row "> <!-- Start Row -->
+              <div class="col-xs-8 col-sm-12">
+               <div class="form-group">
+                <label for="date_of_urinalysis" class=" col-sm-6 control-label">Дата проведения</label>
+                <div class=" col-sm-4 col-md-2 ">
+                  <input type="date" class="form-control" id="date_of_urinalysis" placeholder="ДД/ММ/ГГГГ" name="date_of_urinalysis" value="[% date_of_urinalysis %]">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+          <div class="table-pseudo table-pseudo__striped table-pseudo__hover">
+            <div class="table-pseudo__row">
+              <div class="row table-pseudo__row-header">      
+                <div class="col-xs-3">Параметр</div>
+                <div class="col-xs-3">Результат</div>      
+                <div class="col-xs-3">Единицы</div>      
+                <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>      
+              </div>
+            </div> 
+            <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Относительная плотность</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_relative_density_result" value="[% urinalysis_relative_density_result %]">
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_relative_density_units" value="[% urinalysis_relative_density_units %]">
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Белок</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_albumin_result" value="[% urinalysis_albumin_result %]">
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_albumin_units" value="[% urinalysis_albumin_units %]">
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Глюкоза</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_glucose_result" value="[% urinalysis_glucose_result %]">
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_glucose_units" value="[% urinalysis_glucose_units %]">
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Лейкоциты</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_leucocytes_result" value="[% urinalysis_leucocytes_result %]">
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_leucocytes_units" value="[% urinalysis_leucocytes_units %]">
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+          <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
+              <div class="row">
+                <div class="col-xs-3">        
+                 <div class="table-pseudo__1col_content-wrapper"><p>Эритроциты</p> </div>       
+               </div>
+               <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_erythrocytes_result" value="[% urinalysis_erythrocytes_result %]">
+                </div>
+              </div>
+              <div class="col-xs-3">        
+                <div class="table-pseudo__input-col_content-wrapper">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_erythrocytes_units" value="[% urinalysis_erythrocytes_units %]">
+                </div>
+              </div>
+              <div class="col-sm-3 ">
+                <div class="table-pseudo__checkbox-col_content-wrapper">
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                </div>
+              </div> 
+            </div>
+          </div> <!-- EOF: PSEUDO ROW -->
+              
+ 
+</fieldset> 
+
+
+
+
+
+</form>
+<form class="form-horizontal">
+  <fieldset> 
+
+    <p class="form-groups__h2">Электрокардиография</p>
+    <div class="row row__margin-bottom">  <!-- Start Row -->
+     <div class="col-sm-5 col-md-4">            
+      <p class="form-groups__name">Отмечены ли отклонения от нормы?</p>
+      <label class="radio-inline">
+        <input type="radio" name="electrocardiography" id="inlineRadio1" value="Да" [%IF electrocardiography=='Да'%]checked[% END %]> Да
+      </label>
+      <label class="radio-inline">
+        <input type="radio" name="electrocardiography" id="inlineRadio2" value="Нет" [%IF electrocardiography=='Нет'%]checked[% END %]> Нет
+      </label>            
+    </div>
+    <div class="col-sm-7 col-md-8">
+      <p class="form-groups__name">Уточните отклонения от нормы</p>
+      <textarea class="textarea_toggler form-control show" rows="1" name="electrocardiography_comment">[% electrocardiography_comment %]</textarea>
+    </div> 
+  </div>  <!-- End Row -->
+
+
+
+
+  
+
+
+
+
+
+
+
+<fieldset>
+  <div class="row "> <!--  START ROW -->
+    <div class="block_radio_checkbox_2side_fix">
+      <p class="form-groups__name">
+        Присутствие нежелательных явлений
+      </p>   
+      <label class="radio-inline ">
+        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> 
+        </div>
+      </div> <!-- EOF: ROW -->
+      <!-- ++++++++++++++++++++++++++++    ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
+      <div class="forma_regi_nejelat_yavl--wrapper">
+    <!-- <p class="form-groups__h1">Нежелательные явления</p> -->
+        <p class="form-groups__h1">Форма регистрации Нежелательных Явлений (НЯ)</p>
+        <div class="">  <!-- BLOCK START -->
+         <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-9 col-md-9">
+           <p class="form-groups__name">Описание Нежелательного Явления (НЯ)</p>
+           <textarea class="form-control input_margin_bottom" rows="8" id="perenesenn_zabolevaniya" placeholder="Описание НЯ"></textarea>    
+         </div>
+         <div class="col-sm-3 col-xs-12 col-md-3">   
+          <label class="" for="data-vizita">Дата начала НЯ</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" >
+          <label class="" for="data-vizita">Дата окончания НЯ</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" disabled>  
+          <label>
+            <input type="checkbox" checked> Продолжается</label>  
+        </div> 
+      </div> <!-- EOF: ROW -->
+      <div class="row row__margin-bottom">  <!-- START ROW -->
+        <div class="col-sm-4">
+         <p class="form-groups__name">Связь с исследуемым препаратом (ИП)</p>
+         <select class="form-control">
+           <option>Не указано</option>
+           <option>Отсутствие связи</option>
+           <option>Маловероятная связь</option>
+           <option>Возможная связь</option>
+           <option>Вероятная связь</option>
+           <option>Определенная связь</option>
+         </select>
+       </div>
+       <div class="col-sm-4">
+         <p class="form-groups__name">Степень тяжести</p>
+         <select class="form-control">
+           <option>Не указано</option>
+           <option>Легкая степень</option>
+           <option>Умеренная степень</option>
+           <option>Тяжелая степень</option>
+         </select>
+       </div>
+       <div class="col-sm-4">
+         <p class="form-groups__name">Действия, предпринятые в связи с НЯ</p>
+         <select class="form-control">
+           <option>Не указано</option>
+           <option>Отсутствие действий</option>
+           <option>Снижение дозы</option>
+           <option>Временная приостановка назначения препарата</option>
+           <option>Окончательное прекращение назначения препарата</option>
+           <option>Неизвестно</option>
+         </select>
+       </div>
+
+     </div> <!-- EOF: ROW -->
+     <div class="row row__margin-bottom">  <!-- START ROW -->
+       <div class="col-sm-6 col-md-4">     
+         <p class="form-groups__name">
+           Назначена терапия для лечения НЯ?
+         </p>   
+         <label class="radio-inline ">
+           <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+           <label class="radio-inline">
+             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
+           </div>
+           <div class="col-sm-6">
+             <p class="form-groups__name">Исход НЯ</p>
+             <select class="form-control">
+               <option>Не указано</option>
+               <option>Выздоровление/разрешение</option>
+               <option>Выздоровление/разрешение с последствиями для здоровья</option>
+               <option>Отсутствие выздоровления/разрешения</option>
+               <option>Летальный исход</option>
+               <option>Нет сведений</option>
+             </select>
+           </div>
+         </div> <!-- EOF: ROW -->          
+      </div> <!-- /BLOCK END -->
+      <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить НЯ</button>
+
+    </div>  <!-- /forma_regi_nejelat_yavl--wrapper -->
+    <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
+  </fieldset>
+
+
+
+    <!-- ++++++++++++++++++++++++++++     START ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
+    <fieldset>
+    <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-6 col-md-4">     
+           <p class="form-groups__name">Серьезное НЯ?</p>   
+           <label class="radio-inline ">
+             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
+             </div>
+           </div> <!-- EOF: ROW -->
+ <div class="forma_regi_seryezni_nejelat_yavl--wrapper show">
+ <p class="form-groups__h1">Форма регистрации Серьезных Нежелательных Явлений (СНЯ)</p>
+<div class="form-group ">
+            <label class="control-label col-sm-6" for="data-vizita">Дата рождения</label>
+            <div class="col-sm-3">
+              <input type="date" class="form-control " id="data-vizita" >
+            </div>
+          </div>     
+          <div class="form-group form-group__margin-b-next-radio">
+            <label class="control-label col-sm-6" for="vozrast">Возраст</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control" id="vozrast" >
+              <span class="help-block">Число полных лет</span>
+            </div>
+          </div>
+          <div class="row">
+            <p class="input-name-inline control-label col-sm-6">Пол</p>
+            <label class="radio-inline">
+             <input class="" type="radio" name="pol_mj" id="pol_mujskoy" value="option2"> Мужской
+           </label>
+           <label class="radio-inline">
+             <input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Женский
+           </label>
+         </div>
+         <div class="row">
+            <p class="input-name-inline control-label col-sm-6">Тип обращения</p>
+            <label class="radio-inline">
+             <input class="" type="radio" name="pol_mj" id="pol_mujskoy" value="option2"> Первичное
+           </label>
+           <label class="radio-inline">
+             <input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Вторичное
+           </label>
+         </div>
+
+         
+          <div class="row">
+            <div class="input_margin_bottom col-sm-4">
+              <label class="" for="vozrast">Рост</label>             
+              <input type="text" class="form-control" id="vozrast" placeholder="см.">   
+            </div>
+            <div class="input_margin_bottom col-sm-4">
+              <label class="" for="vozrast">Вес</label>             
+              <input type="text" class="form-control" id="vozrast" placeholder="кг.">              
+            </div>
+            <div class="input_margin_bottom col-sm-4">
+              <label class="" for="vozrast">Дата начала первых признаков СНЯ</label>             
+              <input type="date" class="form-control" id="vozrast" placeholder="кг.">              
+            </div>
+     
+          </div>
+
+
+
+<div class="row">
+             <div class="col-sm-7">
+               <p class="form-groups__name">Расса</p>
+               <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Европеоид
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Негроид
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Монголоид
+              </label>
+              <label class="radio-inline ">
+                <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="show_textarea" ontoggle="text_area_show()"> Другая
+              </label>
+            </div>
+            <div class="col-sm-5">
+              <p class="form-groups__name">Другая расса</p>
+              <textarea class="textarea_toggler form-control show input_margin_bottom" rows="1" placeholder="описание"></textarea>
+            </div>     
+  </div>
+         
+        <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-9 col-md-9">
+           <p class="form-groups__name">Описание (СНЯ)</p>
+           <textarea class="form-control " rows="8" id="perenesenn_zabolevaniya" placeholder="Описание НЯ"></textarea>    
+         </div>
+         <div class="col-sm-3 col-xs-12 col-md-3">   
+          <label class="" for="data-vizita">Дата начала СНЯ</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" >
+       
+        </div> 
+      </div> <!-- EOF: ROW -->
+      <div class="row row__margin-bottom">  <!-- START ROW -->
+        <div class="col-sm-12">
+         <p class="form-groups__name">Отметьте все соответствующие пункты, если они имели место</p>
+         <div class="checkbox"><label><input type="checkbox" > Смерть</label></div>
+         <div class="checkbox"><label><input type="checkbox" > Госпитализация или ее продление</label></div>
+         <div class="checkbox"><label><input type="checkbox" > Выраженная/ стойкая нетрудоспособность</label></div>
+         <div class="checkbox"><label><input type="checkbox" > Непосредственная угроза для жизни пациента</label></div>
+         <div class="checkbox"><label><input type="checkbox" > Врожденная аномалия/ порок развития</label></div>
+         <div class="checkbox"><label><input type="checkbox" > Другое, клинически значимое нежелательное явление</label></div>
+       </div>
+ <div class="col-sm-5 show">
+              <p class="form-groups__name">Другое, клинически значимое нежелательное явление</p>
+              <textarea class="textarea_toggler form-control show input_margin_bottom" rows="2" placeholder="описание"></textarea>
+            </div>  
+
+     </div> <!-- EOF: ROW -->
+
+
+        <p class="form-groups__h2">Информация о препарате</p>
+ <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-md-6">
+           <p class="form-groups__name">ДОЗЫ до или во время развития СНЯ</p>
+           <textarea class="form-control " rows="8" id="perenesenn_zabolevaniya" placeholder="Суточная доза"></textarea>    
+         </div>
+         <div class="col-md-2">
+           <p class="form-groups__name">Путь введения</p>
+           <textarea class="form-control " rows="1" id="perenesenn_zabolevaniya" placeholder="Описание"></textarea>    
+         </div>
+         <div class="col-md-4 col-sm-6">   
+      
+<p class="form-groups__name">Сроки приема препарата </p>    
+          <label class="" for="data-vizita">С:</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" >
+          <label class="" for="data-vizita">По:</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" >
+       
+        </div> 
+      </div> <!-- EOF: ROW -->
+
+<p class="form-groups__h2">Показание к назначению препарата</p>
+
+<div class="row row__margin-bottom">
+<div class="col-md-12">
+<p class="form-groups__name">Анамнез</p>
+           <textarea class="form-control " rows="6" id="perenesenn_zabolevaniya" placeholder="Медицинский анамнез пациента (например, сопутствующие заболевания, аллергические реакции и т.д.)"></textarea>    
+         </div>
+</div>
+</div>
+
+<p class="form-groups__h2">Информация производителя</p>
+<div class="row row__margin-bottom">
+<div class="col-md-8">
+<p class="form-groups__name">Наименование и адрес центра, рeпортирующего СНЯ</p>
+           <textarea class="form-control " rows="2" id="perenesenn_zabolevaniya" placeholder="Заполняется сотрудниками компании"></textarea>    
+         </div>
+                  <div class="col-md-4 col-sm-6">   
+      
+          <label class="" for="data-vizita">Дата получения информации о СНЯ</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" >
+          <label class="" for="data-vizita">Дата данного сообщения</label>            
+          <input type="date" class="form-control input_margin_bottom" id="data-vizita" disabled>
+       
+        </div> 
+</div>
+
+<p class="form-groups__h2">Cопутствующая терапия</p>
+<p class="help">(за исключением применявшейся для коррекции СНЯ)</p>
+          <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить CНЯ</button>
+          </div> <!--  /forma_regi_seryezni_nejelat_yavl--wrapper -->
+    </fieldset>
+    <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
+
+
+
+
+
+
+<fieldset>
+  
+  <div class="row row__margin-bottom">  <!-- Start Row -->
+        <p class="form-groups__h1">Завершение исследования</p>
+
+ <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-12 block_radio_checkbox_2side_fix">     
+           <p class="form-groups__name">Как было завершено исследование?</p>   
+           <label class="radio-inline ">
+             <input type="radio" name="research_completion" id="inlineRadio2" value="Завершение наблюдения в соответствии с протоколом" [%IF research_completion=='Завершение наблюдения в соответствии с протоколом' %]checked[% END %]> Завершение наблюдения в соответствии с протоколом</label> 
+             <label class="radio-inline">
+               <input type="radio" name="research_completion" id="inlineRadio2" value="Досрочное прекращение наблюдения" [%IF research_completion=='Досрочное прекращение наблюдения' %]checked[% END %]> Досрочное прекращение наблюдения</label>          
+             </div>
+           </div> <!-- EOF: ROW -->
+ <div class="1row row__margin-bottom block__toggler show">  <!-- START ROW -->
+      <div class="col-md-12 ">
+          <div class="checkbox">
+          <label><input type="checkbox" > По инициативе пациента</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Исследователем принято решение, что пациента необходимо исключить в интересах самого пациента</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > По решению исследователя в связи с нежелательным явлением/серьезным нежелательным явлением</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Нарушение протокола пациентом</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Пациент был включен с нарушением протокола</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Отклонение от протокола</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Положительный тест на беременность (для женщин)</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Досрочное прекращение исследования</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" > Другая причина</label>
+        </div>        
+      </div>
+           <div class="col-md-6">
+              <p class="form-groups__name">Причина прекращения</p>
+             <textarea class="textarea_toggler form-control show " rows="2" placeholder="описание"></textarea>
+           </div>
+          </div>  <!-- End Row -->
+</div> <!-- EOF: ROW -->
+</fieldset>
+
+
+
+
+
+
+
+
+  <p><button type="submit" class="btn btn-primary btn__width-size__1 btn__distance center-block">Завершить</button></p>
+</form>
+
+
+
+
+</div>
+<div class="distance"></div>
+
+
+
+
+
+
+<div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+  <!--<button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Шаг 1</button>
+  <button type="button" class="btn btn-primary btn-active">Шаг 2</button>
+  <button type="button" class="btn btn-default">Шаг 3</button>
+  <button type="button" class="btn btn-default">Шаг 4</button>
+  <button type="button" class="btn btn-default">Шаг 5</button>
+  <button type="button" class="btn btn-default">Шаг 6</button>
+  <button type="button" class="btn btn-default">Шаг 7</button>
+  <button type="button" class="btn btn-default">Шаг 8</button>-->
+</div>
+</div> <!-- /forms-wrapper -->
+
+
+
+
+<div class="footer container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="list-unstyled">
+        <li class="pull-right"><a href="#top">Back to top</a></li>
+        <li><a href="[% action_url %]">ИРК Моксифлоксацин</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>  <!-- EOF: container -->
+</div>  <!-- /#content -->
+<script src="/vendor/js/jquery.min.js"></script>
+<script src="/vendor/js/bootstrap.min.js"></script>
+<script src="/assets/js/controls.js"></script>
+
+
+</body>
+</html>
