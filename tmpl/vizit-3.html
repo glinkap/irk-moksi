@@ -6,9 +6,9 @@
   <title>Индивидуальная регистрационная карта</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="/assets/css/irk-moksi.css" media="screen">
-  <link rel="stylesheet" href="/assets/css/glyphicons.css" media="screen">
-  <link rel="stylesheet" href="/assets/css/custome.css" media="screen">
+  <link rel="stylesheet" href="../assets/css/irk-moksi.css" media="screen">
+  <link rel="stylesheet" href="../assets/css/glyphicons.css" media="screen">
+  <link rel="stylesheet" href="../assets/css/custome.css" media="screen">
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css"  />
@@ -473,7 +473,7 @@
               </div> 
             </div>
           </div> <!-- EOF: PSEUDO ROW -->     
-
+	  </div>
 
 </fieldset> 
 
@@ -608,7 +608,7 @@
               </div> 
             </div>
           </div> <!-- EOF: PSEUDO ROW -->
-              
+	</div>  
  
 </fieldset> 
 
@@ -651,7 +651,7 @@
         </div>
       </div> <!-- EOF: ROW -->
       <!-- ++++++++++++++++++++++++++++    ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
-      <div class="forma_regi_nejelat_yavl--wrapper">
+      <div class="forma_regi_nejelat_yavl--wrapper hidden">
         <p class="form-groups__h2">Форма регистрации нежелательных явлений <br>(заполняется на всех визитах)</p>
         <div class="">  <!-- BLOCK START -->
          <div class="row row__margin-bottom">  <!-- START ROW -->
@@ -734,31 +734,41 @@
                <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
              </div>
            </div> <!-- EOF: ROW -->
-           <div class="row row__margin-bottom">  <!-- START ROW -->
-            <div class="col-sm-12 col-md-8">
-             <p class="form-groups__name">Описание Серьезного Нежелательного Явления (СНЯ)</p>
-             <textarea class="form-control input_margin_bottom" rows="5" id="perenesenn_zabolevaniya" placeholder="Описание СНЯ"></textarea>    
-           </div>
-           <div class="col-sm-12  col-md-4">   
-            <p class="form-groups__name">Серьёнзное НЯ</p>
-            <select class="form-control">
-              <option>Не указано</option>
-              <option>Привело к смерти</option>
-              <option>Угрожает жизни</option>
-              <option>Требует стационарной госпитализации или продления её</option>
-              <option>Приводит к постоянной или значительной нетрудоспособности</option>
-              <option>Является врожденным отклонением или дефектом</option>
-              <option>Является важным явлением c медицинской точки зрения
-              </option>
-            </select>
-
-          </div> 
-        </div> <!-- EOF: ROW -->
+         
       </div> <!-- /BLOCK END -->
       <button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить НЯ</button>
 
     </div>  <!-- /forma_regi_nejelat_yavl--wrapper -->
     <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
+    
+    
+    
+    
+    
+    
+      <div class="row row__margin-bottom">
+	<!-- START ROW -->
+	<div class="col-sm-12 ">
+		<p class="form-groups__name">Возникали ли серьезные нежелательные явления?</p>
+		<label class="radio-inline ">
+			<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+		<label class="radio-inline">
+			<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+	</div>
+</div>
+<!-- EOF: ROW -->
+<!-- ++++++++++++++++++++++++++++    ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
+<div class="row row__margin-bottom forma_regi_serez_nejelat_yavl--wrapper hidden">
+	
+</div>  
+<!--/forma_regi_serez_nejelat_yavl-->
+<!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->     
+    
+    
+    
+    
+    
+    
     <div class="form-group ">
       <label class="control-label col-sm-6" for="data-vizita">Дата следующего визита</label>
       <div class="col-sm-3">
@@ -808,9 +818,9 @@
 </div>
 </div>  <!-- EOF: container -->
 </div>  <!-- /#content -->
-<script src="/vendor/js/jquery.min.js"></script>
-<script src="/vendor/js/bootstrap.min.js"></script>
-<script src="/assets/js/controls.js"></script>
+<script src="../vendor/js/jquery.min.js"></script>
+<script src="../vendor/js/bootstrap.min.js"></script>
+<script src="../assets/js/controls.js"></script>
 
 
 <!--  <script>            Болванка для датапикера  Мемяцы и годы...

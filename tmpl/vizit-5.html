@@ -6,9 +6,9 @@
   <title>Индивидуальная регистрационная карта</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <link rel="stylesheet" href="/assets/css/irk-moksi.css" media="screen">
-  <link rel="stylesheet" href="/assets/css/glyphicons.css" media="screen">
-  <link rel="stylesheet" href="/assets/css/custome.css" media="screen">
+  <link rel="stylesheet" href="../assets/css/irk-moksi.css" media="screen">
+  <link rel="stylesheet" href="../assets/css/glyphicons.css" media="screen">
+  <link rel="stylesheet" href="../assets/css/custome.css" media="screen">
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css"  />
@@ -609,7 +609,7 @@
               </div> 
             </div>
           </div> <!-- EOF: PSEUDO ROW -->
-              
+	</div>  
  
 </fieldset> 
 
@@ -617,8 +617,7 @@
 
 
 
-</form>
-<form class="form-horizontal">
+
   <fieldset> 
 
     <p class="form-groups__h2">Электрокардиография</p>
@@ -638,31 +637,23 @@
     </div> 
   </div>  <!-- End Row -->
 
+	</fieldset>
 
 
+ 
+    <div class="row row__margin-bottom">  <!-- START ROW -->
+          <div class="col-sm-6 col-md-4">     
+           <p class="form-groups__name">Серьезное НЯ?</p>   
+           <label class="radio-inline ">
+             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+             <label class="radio-inline">
+               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
+             </div>
+           </div> <!-- EOF: ROW -->
 
-  
-
-
-
-
-
-
-
-<fieldset>
-  <div class="row "> <!--  START ROW -->
-    <div class="block_radio_checkbox_2side_fix">
-      <p class="form-groups__name">
-        Присутствие нежелательных явлений
-      </p>   
-      <label class="radio-inline ">
-        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
-        <label class="radio-inline">
-          <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label> 
-        </div>
-      </div> <!-- EOF: ROW -->
       <!-- ++++++++++++++++++++++++++++    ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
-      <div class="forma_regi_nejelat_yavl--wrapper">
+      <div class="forma_regi_nejelat_yavl--wrapper hidden">
+<fieldset>
     <!-- <p class="form-groups__h1">Нежелательные явления</p> -->
         <p class="form-groups__h1">Форма регистрации Нежелательных Явлений (НЯ)</p>
         <div class="">  <!-- BLOCK START -->
@@ -739,24 +730,25 @@
       </div> <!-- /BLOCK END -->
       <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить НЯ</button>
 
+  </fieldset>
     </div>  <!-- /forma_regi_nejelat_yavl--wrapper -->
     <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ НЯ  ++++++++++++++++++++++++++++ -->
-  </fieldset>
 
-
+<div class="row row__margin-bottom">
+									<!-- START ROW -->
+									<div class="col-sm-12 ">
+										<p class="form-groups__name">Возникали ли Серьезные Нежелательные Явления (СНЯ)?</p>
+										<label class="radio-inline ">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+									</div>
+								</div>
+								<!-- EOF: ROW -->
 
     <!-- ++++++++++++++++++++++++++++     START ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
+ <div class="forma_regi_serez_nejelat_yavl--wrapper hidden">
     <fieldset>
-    <div class="row row__margin-bottom">  <!-- START ROW -->
-          <div class="col-sm-6 col-md-4">     
-           <p class="form-groups__name">Серьезное НЯ?</p>   
-           <label class="radio-inline ">
-             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
-             <label class="radio-inline">
-               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
-             </div>
-           </div> <!-- EOF: ROW -->
- <div class="forma_regi_seryezni_nejelat_yavl--wrapper show">
  <p class="form-groups__h1">Форма регистрации Серьезных Нежелательных Явлений (СНЯ)</p>
 <div class="form-group ">
             <label class="control-label col-sm-6" for="data-vizita">Дата рождения</label>
@@ -771,7 +763,7 @@
               <span class="help-block">Число полных лет</span>
             </div>
           </div>
-          <div class="row">
+<div class="row">
             <p class="input-name-inline control-label col-sm-6">Пол</p>
             <label class="radio-inline">
              <input class="" type="radio" name="pol_mj" id="pol_mujskoy" value="option2"> Мужской
@@ -780,7 +772,7 @@
              <input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Женский
            </label>
          </div>
-         <div class="row">
+<div class="row">
             <p class="input-name-inline control-label col-sm-6">Тип обращения</p>
             <label class="radio-inline">
              <input class="" type="radio" name="pol_mj" id="pol_mujskoy" value="option2"> Первичное
@@ -788,10 +780,8 @@
            <label class="radio-inline">
              <input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Вторичное
            </label>
-         </div>
-
-         
-          <div class="row">
+         </div>         
+<div class="row">
             <div class="input_margin_bottom col-sm-4">
               <label class="" for="vozrast">Рост</label>             
               <input type="text" class="form-control" id="vozrast" placeholder="см.">   
@@ -806,9 +796,6 @@
             </div>
      
           </div>
-
-
-
 <div class="row">
              <div class="col-sm-7">
                <p class="form-groups__name">Расса</p>
@@ -829,9 +816,8 @@
               <p class="form-groups__name">Другая расса</p>
               <textarea class="textarea_toggler form-control show input_margin_bottom" rows="1" placeholder="описание"></textarea>
             </div>     
-  </div>
-         
-        <div class="row row__margin-bottom">  <!-- START ROW -->
+  </div>         
+<div class="row row__margin-bottom">  <!-- START ROW -->
           <div class="col-sm-9 col-md-9">
            <p class="form-groups__name">Описание (СНЯ)</p>
            <textarea class="form-control " rows="8" id="perenesenn_zabolevaniya" placeholder="Описание НЯ"></textarea>    
@@ -842,7 +828,7 @@
        
         </div> 
       </div> <!-- EOF: ROW -->
-      <div class="row row__margin-bottom">  <!-- START ROW -->
+<div class="row row__margin-bottom">  <!-- START ROW -->
         <div class="col-sm-12">
          <p class="form-groups__name">Отметьте все соответствующие пункты, если они имели место</p>
          <div class="checkbox"><label><input type="checkbox" > Смерть</label></div>
@@ -858,9 +844,7 @@
             </div>  
 
      </div> <!-- EOF: ROW -->
-
-
-        <p class="form-groups__h2">Информация о препарате</p>
+<p class="form-groups__h2">Информация о препарате</p>
  <div class="row row__margin-bottom">  <!-- START ROW -->
           <div class="col-md-6">
            <p class="form-groups__name">ДОЗЫ до или во время развития СНЯ</p>
@@ -880,17 +864,13 @@
        
         </div> 
       </div> <!-- EOF: ROW -->
-
 <p class="form-groups__h2">Показание к назначению препарата</p>
-
 <div class="row row__margin-bottom">
 <div class="col-md-12">
 <p class="form-groups__name">Анамнез</p>
            <textarea class="form-control " rows="6" id="perenesenn_zabolevaniya" placeholder="Медицинский анамнез пациента (например, сопутствующие заболевания, аллергические реакции и т.д.)"></textarea>    
          </div>
 </div>
-</div>
-
 <p class="form-groups__h2">Информация производителя</p>
 <div class="row row__margin-bottom">
 <div class="col-md-8">
@@ -906,13 +886,27 @@
        
         </div> 
 </div>
-
 <p class="form-groups__h2">Cопутствующая терапия</p>
 <p class="help">(за исключением применявшейся для коррекции СНЯ)</p>
           <button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить CНЯ</button>
-          </div> <!--  /forma_regi_seryezni_nejelat_yavl--wrapper -->
     </fieldset>
+          </div> 
+	  <!--/forma_regi_serez_nejelat_yavl--wrapper-->
     <!-- ++++++++++++++++++++++++++++    /ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1019,9 +1013,9 @@
 </div>
 </div>  <!-- EOF: container -->
 </div>  <!-- /#content -->
-<script src="/vendor/js/jquery.min.js"></script>
-<script src="/vendor/js/bootstrap.min.js"></script>
-<script src="/assets/js/controls.js"></script>
+<script src="../vendor/js/jquery.min.js"></script>
+<script src="../vendor/js/bootstrap.min.js"></script>
+<script src="../assets/js/controls.js"></script>
 
 
 </body>
