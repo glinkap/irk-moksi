@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Индивидуальная регистрационная карта</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="/assets/css/irk-moksi.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/glyphicons.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/custome.css" media="screen">
+  <link rel="stylesheet" href="/assets/css/bootstrap-datepicker3.standalone.min.css">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css"  />
+  <script src="/vendor/js/html5shiv.min.js"></script>
+  <script src="/vendor/js/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body class="left-sidebar">
+  <div class="navbar navbar-inverse navbar-fixed-top ">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button id="toggle" class="navbar-toggle no-collapse pull-left" type="button">
+          <span class="glyphicon glyphicon-menu-hamburger"></span>
+        </button>
+        <a href="[% action_url %]" class="navbar-brand">ИРК Моксифлоксацин</a>
+        <p class="navbar-text">Визиты</p>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="ic-lockoff"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="wrapper toggled">
+    <!-- Sidebar -->
+    <div class="sidebar-left">
+      <a href="#" class="logo-cyberplat-ink"></a>
+      <ul class="nav accordion">
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+        <li><a class="list-group-item" href="#">› <span class="glyphicon glyphicon-heart"></span> item1</a></li>
+      </ul>
+    </div>
+    <!-- /Sidebar -->
+
+    <!-- Page Content -->
+    <div class="content">
+      <div class="container">
+       <div class="forms-wrapper">         <!-- Standard button -->
+         <div class="stage-nav-bar text-center btn-second-line-step">
+			<a class="btn btn-primary btn-active" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]"><span class="glyphicon glyphicon-ok"></span> Визит 0</a>
+			<a class="btn btn-default" href="[% action_url %]?vizit=vizit1&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 1</a>
+			<a class="btn btn-default" href="[% action_url %]?vizit=vizit2&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 2</a>
+			<a class="btn btn-default" href="[% action_url %]?vizit=vizit3&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 3</a>
+			<a class="btn btn-default" href="[% action_url %]?vizit=vizit4&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 4</a>
+			<a class="btn btn-default" href="[% action_url %]?vizit=vizit5&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 5</a>
+			<!--<button type="button" class="btn btn-default" disabled="disabled">Нежелательные явления</button>
+			<button type="button" class="btn btn-default" disabled="disabled">Сопутствующая терапия</button>-->      
+			<a class="btn btn-default btn-success" href="[% action_url %]"><span class="glyphicon glyphicon-plus"></span> Добавить</a>
+         </div>
+         <h1 class="forms--h1">Визит 0</h1>  
+     <div class="text-center ">
+           <p class="help-block">Номер центра: <span class="centra-nomer">[% center_number %]</span> Номер пациента: <span class="pacient-nomer">[% patient_number %]</span></p>      
+       </div>
+         <div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+		<a class="btn btn-primary btn-success" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step1"><span class="glyphicon glyphicon-ok"></span>[% step1 %]</a>
+		<a class="btn btn-primary btn-active" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step2">[% step2 %]</a>
+		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step3">[% step3 %]</a>
+		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step4">[% step4 %]</a>
+		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step5">[% step5 %]</a>
+		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step6">[% step6 %]</a>
+		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step7">[% step7 %]</a>
+        </div>
+
+
+		<form class="form-horizontal" action="[% action_url %]" method="POST">
+		  <input type="hidden" name="protocol" value="050/14">
+		  <input type="hidden" name="center_number" value="[% center_number %]">
+		  <input type="hidden" name="patient_number" value="[% patient_number %]">
+		  <input type="hidden" name="patient_initials" value="[% patient_initials %]">
+		  <input type="hidden" name="vizit" value="vizit0">
+		  <input type="hidden" name="next" value="vizit0_stage3">
+		  <!--<input type="hidden" name="next" value="vizit1">-->
+
+       
+
+<!--              STAGE 2              -->      
+<fieldset>
+  <legend>Перенесенные и сопутствующие заболевания (за 6 месяцев до Визита 0)</legend>
+  <div class="row row__margin-bottom">
+    <div class="col-sm-9 col-md-10">
+     <p class="form-groups__name">Диагноз</p>
+     <textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Описание диагноза" name="diagnose1">[% diagnose1 %]</textarea>    
+   </div>
+   <div class="col-sm-3 col-xs-6 col-md-2">   
+    <label class="" for="data-vizita">Месяц/год</label>            
+    <input type="date" class="form-control input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose1" value="[% date_of_diagnose1 %]">  
+  </div>
+  <div class="col-xs-12">
+    <button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить диагноз</button>
+  </div>
+</div>
+</fieldset>
+<fieldset>
+  <div class="form-groups__name">Cтатус табакокурения</div>
+  <div class="row row__margin-bottom">  <!-- Start Row -->
+   <div class="col-sm-7">
+     <label class="radio-inline ">
+      <input type="radio" name="smoking_status" id="inlineRadio1" value="Никогда не курил(а)" [%IF smoking_status=='Никогда не курил(а)' %]checked[% END %]> Никогда не курил(а)
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="smoking_status" id="inlineRadio2" value="Курит в настоящее время" [%IF smoking_status=='Курит в настоящее время' %]checked[% END %]> Курит в настоящее время
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="smoking_status" id="inlineRadio3" value="Курил(а) в прошлом" [%IF smoking_status=='Курил(а) в прошлом' %]checked[% END %]> Курил(а) в прошлом
+    </label>
+  </div>
+  <div class="col-sm-5">
+    <div class="form-group">
+      <label class="control-label col-sm-8 label__horiz-vertical-type-combinate" for="data-vizita1">Количество полных лет без курения</label>
+      <div class="col-sm-4">
+        <input class="form-control col-sm-6" id="data-vizita1" placeholder="Лет" name="full_years_without_smoking" value="[% full_years_without_smoking %]">
+      </div>
+    </div>
+  </div>         
+</div>  <!-- End Row -->
+<div class="row row__margin-bottom"> <!-- Start Row -->
+  <div class="col-sm-12">
+    <div class="form-groups__name">Употребление алкоголя, наркотических и сильнодействующих препаратов</div>
+    <label class="radio-inline">
+      <input type="radio" name="alcohol_narcotic_and_strong_drugs" id="inlineRadio1" value="Да" [%IF alcohol_narcotic_and_strong_drugs=='Да' %]checked[% END %]> Да
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="alcohol_narcotic_and_strong_drugs" id="inlineRadio2" value="Нет" [%IF alcohol_narcotic_and_strong_drugs=='Нет' %]checked[% END %]> Нет
+    </label>
+  </div>
+</div>  <!-- End Row -->
+</fieldset>
+<fieldset>
+  <legend>Анамнез заболевания внебольничной пневмонией</legend>
+  <div class="row "> <!-- Start Row -->
+    <div class="col-sm-12">
+     <div class="form-group">
+      <label for="reqwreq" class="col-sm-6 control-label">Дата установления диагноза ВП</label>
+      <div class="col-sm-2">
+        <input type="date" class="form-control" id="reqwreq" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnosis_community_acquired_pneumonia" value="[% date_of_diagnosis_community_acquired_pneumonia %]">
+      </div>
+    </div>
+  </div>
+</div>  <!-- End Row -->
+</fieldset>
+<legend>Предшествующая терапия ВП</legend>
+<p>В течение всей болезни; указать препараты, которые принимал пациент в течение последних 14 дней</p>
+<div class="row row__margin-bottom">
+  <div class="col-sm-12 checkbox">
+    <label>
+      <input type="checkbox" name="therapy_not_imposed" value="[% therapy_not_imposed %]" [%IF therapy_not_imposed=="Да" %]checked[% END %]> Терапия не назначалась
+    </label>
+  </div>
+</div>
+<fieldset disabled>
+  <div class="row row__margin-bottom"> <!-- Start Row -->
+    <div class="col-sm-12">
+      <textarea class="textarea_toggler form-control show" rows="2" placeholder="Описание терапии"></textarea>
+    </div> 
+  </div>
+  <div class="row row__margin-bottom"> <!-- Start Row -->     
+   <div class="input_margin_bottom col-sm-5">
+    <label class="" for="vozrast">Доза</label>             
+    <input type="text" class="form-control" id="vozrast" >   
+  </div>
+  <div class="input_margin_bottom col-sm-3">
+    <label class="" for="vozrast">Единицы измерения</label>             
+    <input type="text" class="form-control" id="vozrast" >   
+  </div>
+
+</div>
+<div class="row row__margin-bottom"> <!-- Start Row -->  
+  <div class="input_margin_bottom col-sm-3">
+    <label class="" for="vozrast">Дата начала терапии</label>             
+    <input type="date" class="form-control" id="vozrast" >   
+  </div>
+  <div class="input_margin_bottom col-sm-3">
+    <label class="" for="vozrast">Дата прекращения терапии</label>             
+    <input type="date" class="form-control" id="vozrast" >   
+  </div>
+  <div class="input_margin_bottom col-sm-6">
+    <!-- <div class="form-groups__name">Причины прекращения терапии</div> -->
+    <label style="display: block; ">Причины прекращения терапии</label>
+    <textarea class="textarea_toggler form-control show" rows="1"></textarea>
+  </div>    
+</div>
+<button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить терапию</button>
+</fieldset>
+<p><button type="submit" class="btn btn-primary btn__width-size__1 center-block">Далее</button></p>
+<!--              EOF: STAGE 2              -->     
+ 
+</form>
+
+
+
+
+</div>
+<div class="distance"></div>
+
+
+
+
+
+
+<div class="forms--vizit0--stages-menu text-center btn-second-line-step">
+  <button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> [% step1 %]</button>
+  <button type="button" class="btn btn-primary btn-active">[% step2 %]</button>
+  <button type="button" class="btn btn-default">[% step3 %]</button>
+  <button type="button" class="btn btn-default">[% step4 %]</button>
+  <button type="button" class="btn btn-default">[% step5 %]</button>
+  <button type="button" class="btn btn-default">[% step6 %]</button>
+  <button type="button" class="btn btn-default">[% step7 %]</button>
+</div>
+</div> <!-- /forms-wrapper -->
+
+
+
+
+<div class="footer container-fluid">
+  <div class="row">
+    <div class="col-lg-12">
+      <ul class="list-unstyled">
+        <li class="pull-right"><a href="#top">Back to top</a></li>
+        <li><a href="[% action_url %]">ИРК Моксифлоксацин</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>  <!-- EOF: container -->
+</div>  <!-- /#content -->
+<script src="/vendor/js/jquery.min.js"></script>
+<script src="/vendor/js/bootstrap.min.js"></script>
+<script src="/vendor/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+<script src="/vendor/js/bootstrap-datepicker.ru.min.js" charset="UTF-8"></script>
+<script src="/assets/js/controls.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	$('input[type="date"]').datepicker({
+		format: "dd/mm/yyyy",
+		startDate: "-100y",
+		endDate: "+0d",
+		startView: 2,
+		maxViewMode: 2,
+		language: "ru",
+		autoclose: true,
+		widgetPositioning: {
+            horizontal: 'right',
+            vertical: 'bottom'
+        },
+	});
+});
+</script>
+<script>
+$(':checkbox').change(function(){
+if($(this).prop("checked") == true)
+{
+	$(this).val("Да");
+	var fieldName = $(this).attr("name");
+	if( fieldName.match(/_not_done/) )
+	{
+		var fieldResult = fieldName;
+		var fieldUnits = fieldName;
+		fieldResult = fieldResult.replace(/_not_done/, '_result');
+		fieldUnits = fieldUnits.replace(/_not_done/, '_units');
+		$('input[name="'+fieldResult+'"]').val("");
+		$('input[name="'+fieldUnits+'"]').val("");
+		//$('input[name="'+fieldResult+'"]').prop('value', "");
+		//$('input[name="'+fieldUnits+'"]').prop('value', "");
+		$('input[name="'+fieldResult+'"]').prop('readonly', true);
+		$('input[name="'+fieldUnits+'"]').prop('readonly', true);
+	}
+}
+else if($(this).prop("checked") == false)
+{
+	$(this).val("Нет");
+	var fieldName = $(this).attr("name");
+	if( fieldName.match(/_not_done/) )
+	{
+		var fieldResult = fieldName;
+		var fieldUnits = fieldName;
+		fieldResult = fieldResult.replace(/_not_done/, '_result');
+		fieldUnits = fieldUnits.replace(/_not_done/, '_units');
+		//$('input[name="'+fieldResult+'"]').prop('disabled', false);
+		//$('input[name="'+fieldUnits+'"]').prop('disabled', false);
+		$('input[name="'+fieldResult+'"]').prop('readonly', false);
+		$('input[name="'+fieldUnits+'"]').prop('readonly', false);
+	}
+}
+}); 
+</script>
+
+
+
+</body>
+</html>
