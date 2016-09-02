@@ -82,11 +82,11 @@
 						<fieldset>
 							<div class="row ">
 								<!-- Start Row -->
-								<div class="col-xs-8 col-sm-12">
+								<div class=" col-sm-12">
 									<div class="form-group">
-										<label for="reqwreq" class=" col-xs-12 col-sm-6 control-label">Дата визита</label>
-										<div class=" col-sm-3 col-xs-8">
-											<input type="date" class="form-control" id="reqwreq" placeholder="Password">
+										<label for="gewrgrewgrew" class=" col-xs-12 col-sm-6 control-label">Дата визита</label>
+										<div class=" col-sm-3 col-xs-12">
+											<input type="date" class="form-control" id="gewrgrewgrew" placeholder="Password">
 										</div>
 									</div>
 								</div>
@@ -879,12 +879,12 @@
 										<input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Женский
 									</label>
 								</div>
-								<div class="row row__margin-bottom">
+								<div class="r1ow row__margin-bottom">
 									<p class="input-name-inline control-label col-sm-6 col-xs-12">Тип обращения</p>
-									<label class="radio-inline col-xs-6">
+									<label class="radio-inline ">
 										<input class="" type="radio" name="pol_mj" id="pol_mujskoy" value="option2"> Первичное
 									</label>
-									<label class="radio-inline col-xs-6">
+									<label class="radio-inline ">
 										<input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Вторичное
 									</label>
 								</div>
@@ -1005,7 +1005,6 @@
 								<!-- EOF: ROW -->
 
 								<p class="form-groups__h2">Показание к назначению препарата</p>
-
 								<div class="row row__margin-bottom">
 									<div class="col-md-12">
 										<p class="form-groups__name">Анамнез</p>
@@ -1018,7 +1017,7 @@
 								<div class="row row__margin-bottom">
 									<div class="col-md-8">
 										<p class="form-groups__name">Наименование и адрес центра, рeпортирующего СНЯ</p>
-										<textarea class="form-control " rows="2" id="perenesenn_zabolevaniya" placeholder="Заполняется сотрудниками компании"></textarea>
+										<textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Заполняется сотрудниками компании"></textarea>
 									</div>
 									<div class="col-md-4 col-sm-6">
 										<label class="" for="data-vizita">Дата получения информации о СНЯ</label>
@@ -1030,6 +1029,7 @@
 
 								<p class="form-groups__h2">Cопутствующая терапия</p>
 								<p class="text-center ">(за исключением применявшейся для коррекции СНЯ)</p>
+<!--								блок добавлется по кнопке-->
 								<div class="row row__margin-bottom">
 									<div class="col-md-6">
 										<label for="afewqfewf">Название препарата</label>
@@ -1047,10 +1047,137 @@
 										<p class="form-groups__name">Показания к назначению</p>
 										<textarea class="form-control " rows="2" id="perenesenn_zabolevaniya" placeholder="Описание"></textarea>
 									</div>
+									<div class="col-md-6">
+										<p class="form-groups__name">Комментарии</p>
+										<textarea class="form-control " rows="2" id="perenesenn_zabolevaniya" placeholder="Отметьте в этом пункте, если нежелательное явление было связано с приемом сопутствующего препарата"></textarea>
+									</div>
 
+								</div>
+<!--								блок добавлется по кнопке-->
+								<p>	<button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить</button></p>
+								
+								
+								<p class="form-groups__h2">Предпринятые действия</p>
+								<div class="row row__margin-bottom">
+									<!-- START ROW -->
+									<div class="col-sm-12">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Коррекции не потребовалось</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Исследуемый препарат временно отменен или снижена его доза*</label>
+										</div>
+										<div class="show">
+										<p class="form-groups__name">Указать новую дозу препарата</p>
+										<textarea class="textarea_toggler form-control show input_margin_bottom " rows="1" placeholder="описание"></textarea>
+									</div>
+								
+									
+									
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Препарат отменен окончательно</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Нелекарственная терапия </label>
+										</div>
+										<div class="show">
+										<p class="form-groups__name">Указать меры коррекции СНЯ</p>
+										<textarea class="textarea_toggler form-control show input_margin_bottom " rows="1" placeholder="описание"></textarea>
+									</div>
+										
+										
+										
+										
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Лекарственная терапия для коррекции СНЯ</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox"> Госпитализация или продление госпитализации</label>
+										</div>
+									</div>
+
+								</div>
+								<!-- EOF: ROW -->
+								
+								
+								<p class="form-groups__h2">Данные лабораторных и инструментальных исследований</p>
+								
+								
+<p class="form-groups__name">Укажите только необходимые для установления диагноза и описания нежелательного явления</p>
+<textarea class="textarea_toggler form-control show input_margin_bottom " rows="6" placeholder="Описание"></textarea>
+								
+								
+								<p class="form-groups__h2">Исход серьезного нежелательного явления</p>
+								
+							<div class="row">
+								
+<div class="col-sm-12">
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> Полное выздоровление
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Неполное выздоровление
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Улучшение состояния
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Состояние пациента не изменилось
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Ухудшение состояния
+										</label>
+										<label class="radio-inline">
+											<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Смерть
+										</label>
+									
+									</div>
+									<div class="col-sm-4 show">
+										<p class="form-groups__name">Дата выздоровления</p>
+										<input type="date" class=" form-control  input_margin_bottom" rows="1" placeholder="описание">
+									</div>
+								</div>	
+								<div class="row row__margin-bottom">
+									<p class="input-name-inline control-label col-sm-1">Аутопсия</p>
+									<label class="radio-inline">
+										<input class="" type="radio" name="pol_mj" id="pol_mujskoy" value="option2"> Да
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Нет
+									</label>
+								</div>
+								
+								<p class="form-groups__h2">Оценка связи с приемом препарата</p>
+								<div class="ro1w row__margin-bottom">
+									<p class="input-name-inline control-label ">Причинно-следственная связь между приемом препарата и СНЯ</p>
+									<label class="radio-inline">
+										<input class="" type="radio" name="pol_mj" id="pol_mujskoy" value="option2"> Не предполагается
+									</label>
+									<label class="radio-inline">
+										<input type="radio" name="pol_mj" id="pol_jenskii" value="option3"> Предполагается
+									</label>
 								</div>
 								
 								
+								<p class="form-groups__h2">Данные об источнике информации</p>
+								<div class="row row__margin-bottom">
+									<!-- START ROW -->
+									<div class="col-sm-9 col-md-9">
+										<p class="form-groups__name">Имя, адрес и телефон исследователя</p>
+										<textarea class="form-control input_margin_bottom" rows="3" id="perenesenn_zabolevaniya" placeholder="Имя, адрес и телефон исследователя"></textarea>
+									</div>
+									<div class="col-sm-3 col-xs-12 col-md-3">
+										<label class="" for="data-vizita">Дата сообщения</label>
+										<input type="date" class="form-control input_margin_bottom" id="data-vizita">
+									</div>
+								</div>
+								<!-- EOF: ROW -->
 								
 								
 								
