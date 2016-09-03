@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="../assets/css/irk-moksi.css" media="screen">
   <link rel="stylesheet" href="../assets/css/glyphicons.css" media="screen">
   <link rel="stylesheet" href="../assets/css/custome.css" media="screen">
+  <link rel="stylesheet" href="../assets/css/bootstrap-datepicker3.standalone.min.css">
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="/assets/css/ie8.css"  />
@@ -55,17 +56,48 @@
       <div class="container">
        <div class="forms-wrapper">         <!-- Standard button -->
          <div class="stage-nav-bar text-center btn-second-line-step">
-           <button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Визит 0</button>
-           <button type="button" class="btn btn-primary btn-success">Визит 1</button>
-           <button type="button" class="btn btn-primary btn-success">Визит 2</button>
-           <button type="button" class="btn btn-primary btn-success">Визит 3</button>
-           <button type="button" class="btn btn-primary btn-success">Визит 4</button>
-           <button type="button" class="btn btn-primary btn-active">Визит 5</button>
+            <a class="btn btn-primary btn-success" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]"><span class="glyphicon glyphicon-ok"></span> Визит 0</a>
+			<a class="btn btn-primary btn-success" href="[% action_url %]?vizit=vizit1&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 1</a>
+			<a class="btn btn-primary btn-success" href="[% action_url %]?vizit=vizit2&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 2</a>
+			<a class="btn btn-primary btn-success" href="[% action_url %]?vizit=vizit3&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 3</a>
+			<a class="btn btn-primary btn-success" href="[% action_url %]?vizit=vizit4&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 4</a>
+			<a class="btn btn-primary btn-active" href="[% action_url %]?vizit=vizit5&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 5</a>
            <!--<button type="button" class="btn btn-default" disabled="disabled">Нежелательные явления</button>
-           <button type="button" class="btn btn-default" disabled="disabled">Сопутствующая терапия</button>-->
-           <button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить</button>
+           <button type="button" class="btn btn-default" disabled="disabled">Сопутствующая терапия</button>-->      
+			<a class="btn btn-default btn-success" href="[% action_url %]"><span class="glyphicon glyphicon-plus"></span> Добавить</a>
          </div>
          <h1 class="forms--h1">Визит 5</h1>  
+			<div class="text-center ">
+				<p class="help-block">Номер центра: <span class="centra-nomer">[% center_number %]</span> Номер пациента: <span class="pacient-nomer">[% patient_number %]</span></p>      
+			</div>
+     
+     
+      <form class="form-horizontal form__top-distance" action="[% action_url %]" method="POST">
+             
+             
+              <div class="row "> <!-- Start Row -->
+              <div class="col-sm-12">
+               <div class="form-group">
+                <label for="regrewgrewg" class="  col-sm-6 control-label">Номер центра</label>
+                <div class=" col-sm-3 ">
+                  <input type="text" class="form-control" id="regrewgrewg"  name="wqfeqwfe">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+          <div class="row "> <!-- Start Row -->
+              <div class=" col-sm-12">
+               <div class="form-group">
+                <label for="regrewgrewg1" class="  col-sm-6 control-label">Номер пациента</label>
+                <div class=" col-sm-3 ">
+                  <input type="text" class="form-control" id="regrewgrewg1"  name="wqfeqwfe">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+        
+        
+        
          <div class="forms--vizit0--stages-menu text-center btn-second-line-step">
           <!--<button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> Шаг 1</button>
           <button type="button" class="btn btn-primary btn-active">Шаг 2</button>
@@ -77,7 +109,7 @@
           <button type="button" class="btn btn-default">Шаг 8</button>-->
         </div>
 
-        <form class="form-horizontal form__top-distance" action="[% action_url %]" method="POST">
+        
 		<input type="hidden" name="protocol" value="050/14">
 		<input type="hidden" name="center_number" value="[% center_number %]">
 		<input type="hidden" name="patient_number" value="[% patient_number %]">
@@ -85,10 +117,10 @@
 		<input type="hidden" name="vizit" value="vizit5">
 		<fieldset>        
             <div class="row "> <!-- Start Row -->
-              <div class="col-xs-8 col-sm-12">
+              <div class="col-sm-12">
                <div class="form-group">
-                <label for="date_of_vizit" class=" col-xs-12 col-sm-6 control-label">Дата визита</label>
-                <div class=" col-sm-3 col-xs-8">
+                <label for="date_of_vizit" class="  col-sm-6 control-label">Дата визита</label>
+                <div class=" col-sm-3 ">
                   <input type="date" class="form-control" id="date_of_vizit" placeholder="ДД/ММ/ГГГГ" name="date_of_vizit" value="[% date_of_vizit %]">
                 </div>
               </div>
@@ -129,7 +161,7 @@
            <div class="col-sm-7">
              <p class="form-groups__name">Кожные покровы, мягкие ткани, кости и суставы</p>
              <label class="radio-inline">
-              <input type="radio" name="coverlet__soft_tissues__bones__articulations" id="inlineRadio1" value="Не проведено" [%IF coverlet__soft_tissues__bones__articulations=='Не проведено' %]checked[% END %]> Не проведено
+              <input type="radio" name="coverlet__soft_tissues__bones__articulations" id="inlineRadio1" value="Не проведено" [%IF coverlet__soft_tissues__bones__articulations=='Не проведено' %]f[% END %]> Не проведено
             </label>
             <label class="radio-inline">
               <input type="radio" name="coverlet__soft_tissues__bones__articulations" id="inlineRadio2" value="Норма" [%IF coverlet__soft_tissues__bones__articulations=='Норма' %]checked[% END %]> Норма
@@ -347,17 +379,17 @@
      </div>
      <div class="col-xs-3">        
       <div class="table-pseudo__input-col_content-wrapper">
-        <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_creatinine_result" value="[% biochemical_blood_test_creatinine_result %]">
+        <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_creatinine_result" value="[% biochemical_blood_test_creatinine_result %]" [%IF biochemical_blood_test_creatinine_not_don=="Да" %]readonly[% END %]>
       </div>
     </div>
     <div class="col-xs-3">        
       <div class="table-pseudo__input-col_content-wrapper">
-        <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_creatinine_result" value="[% biochemical_blood_test_creatinine_result %]">
+        <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_creatinine_result" value="[% biochemical_blood_test_creatinine_result %]" [%IF biochemical_blood_test_creatinine_not_don=="Да" %]readonly[% END %]>
       </div>
     </div>
     <div class="col-sm-3 ">
       <div class="table-pseudo__checkbox-col_content-wrapper">
-        <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+        <label class="label__checkbox__pseudo_table"><input type="checkbox" name="biochemical_blood_test_creatinine_not_done" value="[% biochemical_blood_test_creatinine_not_done %]" [%IF biochemical_blood_test_creatinine_not_don=="Да" %]checked[% END %]></label>
       </div>
     </div> 
   </div>
@@ -369,39 +401,39 @@
    </div>
    <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_potassium_result" value="[% biochemical_blood_test_potassium_result %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_potassium_result" value="[% biochemical_blood_test_potassium_result %]" [%IF biochemical_blood_test_potassium_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_potassium_units" value="[% biochemical_blood_test_potassium_units %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_potassium_units" value="[% biochemical_blood_test_potassium_units %]" [%IF biochemical_blood_test_potassium_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-sm-3 ">
     <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" name="biochemical_blood_test_potassium_not_done" value="[% biochemical_blood_test_potassium_not_done %]" [%IF biochemical_blood_test_potassium_not_done=="Да" %]checked[% END %]></label>
     </div>
   </div> 
 </div>
 </div> <!-- EOF: PSEUDO ROW -->
 <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
   <div class="row">
-    <div class="col-xs-3">        
-     <div class="table-pseudo__1col_content-wrapper"><p>Натрий</p> </div>       
+    <div class="col-xs-3">
+     <div class="table-pseudo__1col_content-wrapper"><p>Натрий</p> </div>
    </div>
-   <div class="col-xs-3">        
+   <div class="col-xs-3">
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_sodium_result" value="[% biochemical_blood_test_sodium_result %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_sodium_result" value="[% biochemical_blood_test_sodium_result %]" [%IF biochemical_blood_test_sodium_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_sodium_units" value="[% biochemical_blood_test_sodium_units %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_sodium_units" value="[% biochemical_blood_test_sodium_units %]" [%IF biochemical_blood_test_sodium_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-sm-3 ">
     <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" name="biochemical_blood_test_sodium_not_done" value="[% biochemical_blood_test_sodium_not_done %]" [%IF biochemical_blood_test_sodium_not_done=="Да" %]checked[% END %]></label>
     </div>
   </div> 
 </div>
@@ -413,17 +445,17 @@
    </div>
    <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_alanine_aminotransferase_result" value="[% biochemical_blood_test_alanine_aminotransferase_result %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_alanine_aminotransferase_result" value="[% biochemical_blood_test_alanine_aminotransferase_result %]" [%IF biochemical_blood_test_alanine_aminotransferase_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_alanine_aminotransferase_units" value="[% biochemical_blood_test_alanine_aminotransferase_units %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_alanine_aminotransferase_units" value="[% biochemical_blood_test_alanine_aminotransferase_units %]" [%IF biochemical_blood_test_alanine_aminotransferase_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-sm-3 ">
     <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" name="biochemical_blood_test_alanine_aminotransferase_not_done" value="[% biochemical_blood_test_alanine_aminotransferase_not_done %]" [%IF biochemical_blood_test_alanine_aminotransferase_not_done=="Да" %]checked[% END %]></label>
     </div>
   </div> 
 </div>
@@ -435,17 +467,17 @@
    </div>
    <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_aspartate_aminotransferase_result" value="[% biochemical_blood_test_aspartate_aminotransferase_result %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_aspartate_aminotransferase_result" value="[% biochemical_blood_test_aspartate_aminotransferase_result %]" [%IF biochemical_blood_test_aspartate_aminotransferase_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_aspartate_aminotransferase_units" value="[% biochemical_blood_test_aspartate_aminotransferase_units %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_aspartate_aminotransferase_units" value="[% biochemical_blood_test_aspartate_aminotransferase_units %]" [%IF biochemical_blood_test_aspartate_aminotransferase_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-sm-3 ">
     <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" name="biochemical_blood_test_aspartate_aminotransferase_not_done" value="[% biochemical_blood_test_aspartate_aminotransferase_not_done %]" [%IF biochemical_blood_test_aspartate_aminotransferase_not_done=="Да" %]checked[% END %]></label>
     </div>
   </div> 
 </div>
@@ -457,17 +489,17 @@
    </div>
    <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_urea_result" value="[% biochemical_blood_test_urea_result %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_urea_result" value="[% biochemical_blood_test_urea_result %]" [%IF biochemical_blood_test_urea_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-xs-3">        
     <div class="table-pseudo__input-col_content-wrapper">
-      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_urea_units" value="[% biochemical_blood_test_urea_units %]">
+      <input type="text" class="form-control" id="tblinput" name="biochemical_blood_test_urea_units" value="[% biochemical_blood_test_urea_units %]" [%IF biochemical_blood_test_urea_not_done=="Да" %]readonly[% END %]>
     </div>
   </div>
   <div class="col-sm-3 ">
     <div class="table-pseudo__checkbox-col_content-wrapper">
-      <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+      <label class="label__checkbox__pseudo_table"><input type="checkbox" name="biochemical_blood_test_urea_not_done" value="[% biochemical_blood_test_urea_not_done %]" [%IF biochemical_blood_test_urea_not_done=="Да" %]checked[% END %]></label>
     </div>
   </div> 
 </div>
@@ -492,119 +524,119 @@
           </div>  <!-- End Row -->
           <div class="table-pseudo table-pseudo__striped table-pseudo__hover">
             <div class="table-pseudo__row">
-              <div class="row table-pseudo__row-header">      
+              <div class="row table-pseudo__row-header">
                 <div class="col-xs-3">Параметр</div>
-                <div class="col-xs-3">Результат</div>      
-                <div class="col-xs-3">Единицы</div>      
-                <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>      
+                <div class="col-xs-3">Результат</div>
+                <div class="col-xs-3">Единицы</div>
+                <div class="col-xs-3 table-pseudo__row-header_4col">Не проведено</div>
               </div>
             </div> 
             <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
               <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Относительная плотность</p> </div>       
+                <div class="col-xs-3">
+                 <div class="table-pseudo__1col_content-wrapper"><p>Относительная плотность</p> </div>
                </div>
-               <div class="col-xs-3">        
+               <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_relative_density_result" value="[% urinalysis_relative_density_result %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_relative_density_result" value="[% urinalysis_relative_density_result %]" [%IF urinalysis_relative_density_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
-              <div class="col-xs-3">        
+              <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_relative_density_units" value="[% urinalysis_relative_density_units %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_relative_density_units" value="[% urinalysis_relative_density_units %]" [%IF urinalysis_relative_density_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
               <div class="col-sm-3 ">
                 <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" name="urinalysis_relative_density_not_done" value="[% urinalysis_relative_density_not_done %]" [%IF urinalysis_relative_density_not_done=="Да" %]checked[% END %]></label>
                 </div>
               </div> 
             </div>
           </div> <!-- EOF: PSEUDO ROW -->
           <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
               <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Белок</p> </div>       
+                <div class="col-xs-3">
+                 <div class="table-pseudo__1col_content-wrapper"><p>Белок</p> </div>
                </div>
-               <div class="col-xs-3">        
+               <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_albumin_result" value="[% urinalysis_albumin_result %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_albumin_result" value="[% urinalysis_albumin_result %]" [%IF urinalysis_albumin_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
-              <div class="col-xs-3">        
+              <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_albumin_units" value="[% urinalysis_albumin_units %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_albumin_units" value="[% urinalysis_albumin_units %]" [%IF urinalysis_albumin_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
               <div class="col-sm-3 ">
                 <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" name="urinalysis_albumin_not_done" value="[% urinalysis_albumin_not_done %]" [%IF urinalysis_albumin_not_done=="Да" %]checked[% END %]></label>
                 </div>
               </div> 
             </div>
           </div> <!-- EOF: PSEUDO ROW -->
           <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
               <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Глюкоза</p> </div>       
+                <div class="col-xs-3">
+                 <div class="table-pseudo__1col_content-wrapper"><p>Глюкоза</p> </div>
                </div>
-               <div class="col-xs-3">        
+               <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_glucose_result" value="[% urinalysis_glucose_result %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_glucose_result" value="[% urinalysis_glucose_result %]" [%IF urinalysis_glucose_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
-              <div class="col-xs-3">        
+              <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_glucose_units" value="[% urinalysis_glucose_units %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_glucose_units" value="[% urinalysis_glucose_units %]" [%IF urinalysis_glucose_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
               <div class="col-sm-3 ">
                 <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" name="urinalysis_glucose_not_done" value="[% urinalysis_glucose_not_done %]" [%IF urinalysis_glucose_not_done=="Да" %]checked[% END %]></label>
                 </div>
               </div> 
             </div>
           </div> <!-- EOF: PSEUDO ROW -->
           <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
               <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Лейкоциты</p> </div>       
+                <div class="col-xs-3">
+                 <div class="table-pseudo__1col_content-wrapper"><p>Лейкоциты</p> </div>
                </div>
-               <div class="col-xs-3">        
+               <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_leucocytes_result" value="[% urinalysis_leucocytes_result %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_leucocytes_result" value="[% urinalysis_leucocytes_result %]" [%IF urinalysis_leucocytes_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
-              <div class="col-xs-3">        
+              <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_leucocytes_units" value="[% urinalysis_leucocytes_units %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_leucocytes_units" value="[% urinalysis_leucocytes_units %]" [%IF urinalysis_leucocytes_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
               <div class="col-sm-3 ">
                 <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" name="urinalysis_leucocytes_not_done" value="[% urinalysis_leucocytes_not_done %]" [%IF urinalysis_leucocytes_not_done=="Да" %]checked[% END %]></label>
                 </div>
               </div> 
             </div>
           </div> <!-- EOF: PSEUDO ROW -->
           <div class="table-pseudo__row"> <!-- START PSEUDO ROW -->
               <div class="row">
-                <div class="col-xs-3">        
-                 <div class="table-pseudo__1col_content-wrapper"><p>Эритроциты</p> </div>       
+                <div class="col-xs-3">
+                 <div class="table-pseudo__1col_content-wrapper"><p>Эритроциты</p> </div>
                </div>
-               <div class="col-xs-3">        
+               <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_erythrocytes_result" value="[% urinalysis_erythrocytes_result %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_erythrocytes_result" value="[% urinalysis_erythrocytes_result %]" [%IF urinalysis_erythrocytes_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
-              <div class="col-xs-3">        
+              <div class="col-xs-3">
                 <div class="table-pseudo__input-col_content-wrapper">
-                  <input type="text" class="form-control" id="tblinput" name="urinalysis_erythrocytes_units" value="[% urinalysis_erythrocytes_units %]">
+                  <input type="text" class="form-control" id="tblinput" name="urinalysis_erythrocytes_units" value="[% urinalysis_erythrocytes_units %]" [%IF urinalysis_erythrocytes_not_done=="Да" %]readonly[% END %]>
                 </div>
               </div>
               <div class="col-sm-3 ">
                 <div class="table-pseudo__checkbox-col_content-wrapper">
-                  <label class="label__checkbox__pseudo_table"><input type="checkbox" checked ></label>
+                  <label class="label__checkbox__pseudo_table"><input type="checkbox" name="urinalysis_erythrocytes_not_done" value="[% urinalysis_erythrocytes_not_done %]" [%IF urinalysis_erythrocytes_not_done=="Да" %]checked[% END %]></label>
                 </div>
               </div> 
             </div>
@@ -643,11 +675,11 @@
  
     <div class="row row__margin-bottom">  <!-- START ROW -->
           <div class="col-sm-6 col-md-4">     
-           <p class="form-groups__name">Серьезное НЯ?</p>   
+           <p class="form-groups__name">Возникали ли нежелательные явления?</p>   
            <label class="radio-inline ">
-             <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label> 
+             <input type="radio" name="undesirable_effects" id="inlineRadio2" value="Да" [%IF undesirable_effects == "Да" %]checked[% END %]> Да</label> 
              <label class="radio-inline">
-               <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>          
+               <input type="radio" name="undesirable_effects" id="inlineRadio2" value="Нет" [%IF undesirable_effects == "Нет" %]checked[% END %]> Нет</label>          
              </div>
            </div> <!-- EOF: ROW -->
 
@@ -737,17 +769,17 @@
 <div class="row row__margin-bottom">
 									<!-- START ROW -->
 									<div class="col-sm-12 ">
-										<p class="form-groups__name">Возникали ли Серьезные Нежелательные Явления (СНЯ)?</p>
+										<p class="form-groups__name">Возникали ли серьезные нежелательные явления?</p>
 										<label class="radio-inline ">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Да</label>
+											<input type="radio" name="serious_undesirable_effects" id="inlineRadio2" value="Да" [%IF serious_undesirable_effects == "Да" %]checked[% END %]> Да</label>
 										<label class="radio-inline">
-											<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Нет</label>
+											<input type="radio" name="serious_undesirable_effects" id="inlineRadio2" value="Нет" [%IF serious_undesirable_effects == "Нет" %]checked[% END %]> Нет</label>
 									</div>
 								</div>
 								<!-- EOF: ROW -->
 
     <!-- ++++++++++++++++++++++++++++     START ФОРМА РЕГИСТРАЦИИ CНЯ  ++++++++++++++++++++++++++++ -->
- <div class="forma_regi_serez_nejelat_yavl--wrapper 1hidden">
+ <div class="forma_regi_serez_nejelat_yavl--wrapper hidden">
     <fieldset>
  <p class="form-groups__h1">Форма регистрации Серьезных Нежелательных Явлений (СНЯ)</p>
 <div class="form-group ">
@@ -912,7 +944,6 @@
 
 
 
-
 <fieldset>
   
   <div class="row row__margin-bottom">  <!-- Start Row -->
@@ -928,37 +959,37 @@
              </div>
            </div> <!-- EOF: ROW -->
  <div class="1row row__margin-bottom block__toggler show">  <!-- START ROW -->
-      <div class="col-md-12 ">
-          <div class="checkbox">
-          <label><input type="checkbox" > По инициативе пациента</label>
+      <div class="col-md-6 ">
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> По инициативе пациента</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > Исследователем принято решение, что пациента необходимо исключить в интересах самого пациента</label>
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> Исследователем принято решение, что пациента необходимо исключить в интересах самого пациента</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > По решению исследователя в связи с нежелательным явлением/серьезным нежелательным явлением</label>
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> По решению исследователя в связи с нежелательным явлением/серьезным нежелательным явлением</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > Нарушение протокола пациентом</label>
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> Нарушение протокола пациентом</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > Пациент был включен с нарушением протокола</label>
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> Пациент был включен с нарушением протокола</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > Отклонение от протокола</label>
+	 </div>
+       <div class="col-md-6 ">
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> Отклонение от протокола</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > Положительный тест на беременность (для женщин)</label>
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> Положительный тест на беременность (для женщин)</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > Досрочное прекращение исследования</label>
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> Досрочное прекращение исследования</label>
         </div>
-        <div class="checkbox">
-          <label><input type="checkbox" > Другая причина</label>
-        </div>        
-      </div>
-           <div class="col-md-6">
-              <p class="form-groups__name">Причина прекращения</p>
+        <div class="radio">
+          <label><input type="radio" name="adsafdf"> Другая причина</label>
+        </div>
+		   <p class="form-groups__name">Причина прекращения</p>
              <textarea class="textarea_toggler form-control show " rows="2" placeholder="описание"></textarea>
            </div>
           </div>  <!-- End Row -->
@@ -1015,7 +1046,65 @@
 </div>  <!-- /#content -->
 <script src="../vendor/js/jquery.min.js"></script>
 <script src="../vendor/js/bootstrap.min.js"></script>
+<script src="../vendor/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+<script src="../vendor/js/bootstrap-datepicker.ru.min.js" charset="UTF-8"></script>
 <script src="../assets/js/controls.js"></script>
+<script>
+$(document).ready(function() {
+	$('input[type="date"]').datepicker({
+		format: "dd/mm/yyyy",
+		startDate: "-100y",
+		endDate: "+0d",
+		startView: 2,
+		maxViewMode: 2,
+		language: "ru",
+		autoclose: true,
+		widgetPositioning: {
+            horizontal: 'right',
+            vertical: 'bottom'
+        },
+	});
+});
+</script>
+
+<script>
+$(':checkbox').change(function(){
+if($(this).prop("checked") == true)
+{
+	$(this).val("Да");
+	var fieldName = $(this).attr("name");
+	if( fieldName.match(/_not_done/) )
+	{
+		var fieldResult = fieldName;
+		var fieldUnits = fieldName;
+		fieldResult = fieldResult.replace(/_not_done/, '_result');
+		fieldUnits = fieldUnits.replace(/_not_done/, '_units');
+		$('input[name="'+fieldResult+'"]').val("");
+		$('input[name="'+fieldUnits+'"]').val("");
+		//$('input[name="'+fieldResult+'"]').prop('value', "");
+		//$('input[name="'+fieldUnits+'"]').prop('value', "");
+		$('input[name="'+fieldResult+'"]').prop('readonly', true);
+		$('input[name="'+fieldUnits+'"]').prop('readonly', true);
+	}
+}
+else if($(this).prop("checked") == false)
+{
+	$(this).val("Нет");
+	var fieldName = $(this).attr("name");
+	if( fieldName.match(/_not_done/) )
+	{
+		var fieldResult = fieldName;
+		var fieldUnits = fieldName;
+		fieldResult = fieldResult.replace(/_not_done/, '_result');
+		fieldUnits = fieldUnits.replace(/_not_done/, '_units');
+		//$('input[name="'+fieldResult+'"]').prop('disabled', false);
+		//$('input[name="'+fieldUnits+'"]').prop('disabled', false);
+		$('input[name="'+fieldResult+'"]').prop('readonly', false);
+		$('input[name="'+fieldUnits+'"]').prop('readonly', false);
+	}
+}
+}); 
+</script>
 
 
 </body>
