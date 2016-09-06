@@ -56,41 +56,92 @@
       <div class="container">
        <div class="forms-wrapper">         <!-- Standard button -->
          <div class="stage-nav-bar text-center btn-second-line-step">
-			<a class="btn btn-primary btn-active" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]"><span class="glyphicon glyphicon-ok"></span> Визит 0</a>
-			<a class="btn btn-default" href="[% action_url %]?vizit=vizit1&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 1</a>
-			<a class="btn btn-default" href="[% action_url %]?vizit=vizit2&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 2</a>
-			<a class="btn btn-default" href="[% action_url %]?vizit=vizit3&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 3</a>
-			<a class="btn btn-default" href="[% action_url %]?vizit=vizit4&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 4</a>
-			<a class="btn btn-default" href="[% action_url %]?vizit=vizit5&center_number=[% center_number %]&patient_number=[% patient_number %]">Визит 5</a>
+            <button class="btn btn-primary btn-active" id="vizit0_stage1"><span class="glyphicon glyphicon-ok"></span> Визит 0</button>
+			<button class="btn btn-primary btn-success" id="vizit1_stage9">Визит 1</button>
+			<button class="btn btn-primary btn-success" id="vizit2_stage11">Визит 2</button>
+			<button class="btn btn-primary btn-success" id="vizit3_stage13">Визит 3</button>
+			<button class="btn btn-primary btn-success" id="vizit4_stage15">Визит 4</button>
+			<button class="btn btn-primary btn-success" id="vitit5_stage18">Визит 5</button>
 			<!--<button type="button" class="btn btn-default" disabled="disabled">Нежелательные явления</button>
 			<button type="button" class="btn btn-default" disabled="disabled">Сопутствующая терапия</button>-->      
 			<a class="btn btn-default btn-success" href="[% action_url %]"><span class="glyphicon glyphicon-plus"></span> Добавить</a>
          </div>
          <h1 class="forms--h1">Визит 0</h1>  
      <div class="text-center ">
-           <p class="help-block">Номер центра: <span class="centra-nomer">[% center_number %]</span> Номер пациента: <span class="pacient-nomer">[% patient_number %]</span></p>      
+           <!--<p class="help-block">Номер центра: <span class="centra-nomer">[% center_number %]</span> Номер пациента: <span class="pacient-nomer">[% patient_number %]</span></p>-->
        </div>
          <div class="forms--vizit0--stages-menu text-center btn-second-line-step">
-		<a class="btn btn-primary btn-success" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step1"><span class="glyphicon glyphicon-ok"></span>[% step1 %]</a>
-		<a class="btn btn-primary btn-active" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step2">[% step2 %]</a>
-		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step3">[% step3 %]</a>
-		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step4">[% step4 %]</a>
-		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step5">[% step5 %]</a>
-		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step6">[% step6 %]</a>
-		<a class="btn btn-default" href="[% action_url %]?vizit=vizit0&center_number=[% center_number %]&patient_number=[% patient_number %]&step=step7">[% step7 %]</a>
+		<button class="btn btn-primary btn-success" id="vizit0_stage1_secondary"><span class="glyphicon glyphicon-ok"></span>[% step1 %]</button>
+		<button class="btn btn-primary btn-active" id="vizit0_stage2">[% step2 %]</button>
+		<button class="btn btn-default" id="vizit0_stage3">[% step3 %]</button>
+		<button class="btn btn-default" id="vizit0_stage4">[% step4 %]</button>
+		<button class="btn btn-default" id="vizit0_stage5">[% step5 %]</button>
+		<button class="btn btn-default" id="vizit0_stage6">[% step6 %]</button>
+		<button class="btn btn-default" id="vizit0_stage7">[% step7 %]</button>
+		<button class="btn btn-default" id="vizit0_stage8">[% step8 %]</button>
         </div>
 
 
-		<form class="form-horizontal" action="[% action_url %]" method="POST">
-		  <input type="hidden" name="protocol" value="050/14">
-		  <input type="hidden" name="center_number" value="[% center_number %]">
-		  <input type="hidden" name="patient_number" value="[% patient_number %]">
+		<form class="form-horizontal" id="moxifloxacin_form" action="[% action_url %]" method="POST">
+					<div class="row "> <!-- Start Row -->
+						<div class="col-sm-12">
+							<div class="form-group">
+								<label for="regrewgrewg" class="  col-sm-6 control-label">Протокол</label>
+								<div class=" col-sm-3 ">
+									<input type="text" class="form-control" id="regrewgrewg" name="protocol" value="[% protocol %]">
+								</div>
+							</div>
+						</div>
+					</div>  <!-- End Row -->
+
+     <div class="row "> <!-- Start Row -->
+              <div class="col-sm-12">
+               <div class="form-group">
+                <label for="regrewgrewg" class="  col-sm-6 control-label">Номер центра</label>
+                <div class=" col-sm-3 ">
+                  <input type="text" class="form-control" id="regrewgrewg" name="vizit0_step2_center_number" value="[% vizit0_step2_center_number %]">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+          <div class="row "> <!-- Start Row -->
+              <div class=" col-sm-12">
+               <div class="form-group">
+                <label for="regrewgrewg1" class="  col-sm-6 control-label">Номер пациента</label>
+                <div class=" col-sm-3 ">
+                  <input type="text" class="form-control" id="regrewgrewg1" name="vizit0_step2_patient_number" value="[% vizit0_step2_patient_number %]">
+                </div>
+              </div>
+            </div>
+          </div>  <!-- End Row -->
+        
+		  <input type="hidden" name="document_id" value="[% document_id %]">
 		  <input type="hidden" name="patient_initials" value="[% patient_initials %]">
 		  <input type="hidden" name="vizit" value="vizit0">
 		  <input type="hidden" name="next" value="vizit0_stage3">
 		  <!--<input type="hidden" name="next" value="vizit1">-->
-
-       
+<fieldset>
+<div class="row row__margin-bottom">  <!-- Start Row -->
+ <div class="col-sm-7">
+   <p class="form-groups__name">Нервно-психический статус</p>
+   <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio1" value="Не проведено" [%IF neuropsychiatric_status == "Не проведено" %]checked[% END %]> Не проведено
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio2" value="Норма" [%IF neuropsychiatric_status == "Норма" %]checked[% END %]> Норма
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio3" value="Клинически незначимое" [%IF neuropsychiatric_status == "Клинически незначимое" %]checked[% END %]> Клинически незначимое
+  </label>
+  <label class="radio-inline">
+    <input type="radio" name="neuropsychiatric_status" id="inlineRadio3" value="Клинически значимое" ontoggle="text_area_show()" [%IF neuropsychiatric_status == "Клинически значимое" %]checked[% END %]> Клинически значимое
+  </label>
+</div>
+<div class="col-sm-5">
+  <textarea name="neuropsychiatric_status__comments" class="textarea_toggler form-control show" rows="2" placeholder="Клинически значимое (описание)">[% neuropsychiatric_status__comments %]</textarea>
+</div> 
+</div>  <!-- End Row -->
+</fieldset>
 
 <!--              STAGE 2              -->      
 <fieldset>
@@ -102,12 +153,65 @@
    </div>
    <div class="col-sm-3 col-xs-6 col-md-2">   
     <label class="" for="data-vizita">Месяц/год</label>            
-    <input type="date" class="form-control input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose1" value="[% date_of_diagnose1 %]">  
+    <input type="text" class="form-control dattte input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose1" value="[% date_of_diagnose1 %]">  
   </div>
+</div>
+ <div class="row row__margin-bottom">
+    <div class="col-sm-9 col-md-10">
+     <p class="form-groups__name">Диагноз</p>
+     <textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Описание диагноза" name="diagnose2">[% diagnose2 %]</textarea>    
+   </div>
+   <div class="col-sm-3 col-xs-6 col-md-2">   
+    <label class="" for="data-vizita">Месяц/год</label>            
+    <input type="text" class="form-control dattte input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose2" value="[% date_of_diagnose2 %]">  
+  </div>
+</div>
+ <div class="row row__margin-bottom">
+    <div class="col-sm-9 col-md-10">
+     <p class="form-groups__name">Диагноз</p>
+     <textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Описание диагноза" name="diagnose3">[% diagnose3 %]</textarea>    
+   </div>
+   <div class="col-sm-3 col-xs-6 col-md-2">   
+    <label class="" for="data-vizita">Месяц/год</label>            
+    <input type="text" class="form-control dattte input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose3" value="[% date_of_diagnose3 %]">  
+  </div>
+</div>
+ <div class="row row__margin-bottom">
+    <div class="col-sm-9 col-md-10">
+     <p class="form-groups__name">Диагноз</p>
+     <textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Описание диагноза" name="diagnose4">[% diagnose4 %]</textarea>    
+   </div>
+   <div class="col-sm-3 col-xs-6 col-md-2">   
+    <label class="" for="data-vizita">Месяц/год</label>            
+    <input type="text" class="form-control dattte input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose4" value="[% date_of_diagnose4 %]">  
+  </div>
+ </div>
+ <div class="row row__margin-bottom">
+    <div class="col-sm-9 col-md-10">
+     <p class="form-groups__name">Диагноз</p>
+     <textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Описание диагноза" name="diagnose5">[% diagnose5 %]</textarea>    
+   </div>
+   <div class="col-sm-3 col-xs-6 col-md-2">   
+    <label class="" for="data-vizita">Месяц/год</label>            
+    <input type="text" class="form-control dattte input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose5" value="[% date_of_diagnose5 %]">  
+  </div>
+ </div>
+ <div class="row row__margin-bottom">
+    <div class="col-sm-9 col-md-10">
+     <p class="form-groups__name">Диагноз</p>
+     <textarea class="form-control input_margin_bottom" rows="2" id="perenesenn_zabolevaniya" placeholder="Описание диагноза" name="diagnose6">[% diagnose6 %]</textarea>    
+   </div>
+   <div class="col-sm-3 col-xs-6 col-md-2">   
+    <label class="" for="data-vizita">Месяц/год</label>            
+    <input type="text" class="form-control dattte input_margin_bottom" id="data-vizita" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnose6" value="[% date_of_diagnose6 %]">  
+  </div>
+</div>
+<!--
   <div class="col-xs-12">
     <button type="button" class="btn btn-default btn-success"><span class="glyphicon glyphicon-plus"></span> Добавить диагноз</button>
   </div>
-</div>
+-->
+
 </fieldset>
 <fieldset>
   <div class="form-groups__name">Cтатус табакокурения</div>
@@ -151,7 +255,7 @@
      <div class="form-group">
       <label for="reqwreq" class="col-sm-6 control-label">Дата установления диагноза ВП</label>
       <div class="col-sm-2">
-        <input type="date" class="form-control" id="reqwreq" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnosis_community_acquired_pneumonia" value="[% date_of_diagnosis_community_acquired_pneumonia %]">
+        <input type="text" class="form-control dattte" id="reqwreq" placeholder="ДД/ММ/ГГГГ" name="date_of_diagnosis_community_acquired_pneumonia" value="[% date_of_diagnosis_community_acquired_pneumonia %]">
       </div>
     </div>
   </div>
@@ -166,39 +270,40 @@
     </label>
   </div>
 </div>
-<fieldset disabled>
+<!--<fieldset disabled>-->
+<fieldset>
   <div class="row row__margin-bottom"> <!-- Start Row -->
     <div class="col-sm-12">
-      <textarea class="textarea_toggler form-control show" rows="2" placeholder="Описание терапии"></textarea>
+      <textarea class="textarea_toggler form-control show" rows="2" name="therapy_description1" placeholder="Описание терапии">[% therapy_description1 %]</textarea>
     </div> 
   </div>
   <div class="row row__margin-bottom"> <!-- Start Row -->     
    <div class="input_margin_bottom col-sm-5">
     <label class="" for="vozrast">Доза</label>             
-    <input type="text" class="form-control" id="vozrast" >   
+    <input type="text" class="form-control" id="vozrast" name="therapy_dosage1" value="[% therapy_dosage1 %]">   
   </div>
   <div class="input_margin_bottom col-sm-3">
     <label class="" for="vozrast">Единицы измерения</label>             
-    <input type="text" class="form-control" id="vozrast" >   
+    <input type="text" class="form-control" id="vozrast" name="therapy_units1" value="[% therapy_units1 %]">   
   </div>
 
 </div>
 <div class="row row__margin-bottom"> <!-- Start Row -->  
   <div class="input_margin_bottom col-sm-3">
     <label class="" for="vozrast">Дата начала терапии</label>             
-    <input type="date" class="form-control" id="vozrast" >   
+    <input type="text" class="form-control  dattte" id="vozrast" name="therapy_start_date1" value="[% therapy_start_date1 %]">   
   </div>
   <div class="input_margin_bottom col-sm-3">
     <label class="" for="vozrast">Дата прекращения терапии</label>             
-    <input type="date" class="form-control" id="vozrast" >   
+    <input type="text" class="form-control  dattte" id="vozrast" name="therapy_end_date1" value="[% therapy_end_date1 %]">   
   </div>
   <div class="input_margin_bottom col-sm-6">
     <!-- <div class="form-groups__name">Причины прекращения терапии</div> -->
     <label style="display: block; ">Причины прекращения терапии</label>
-    <textarea class="textarea_toggler form-control show" rows="1"></textarea>
+    <textarea class="textarea_toggler form-control show" rows="1" name="therapy_termination_reason1" >[% therapy_termination_reason1 %]</textarea>
   </div>    
 </div>
-<button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить терапию</button>
+<!--<button type="button" class="btn btn-default btn-success btn__distance--type2"><span class="glyphicon glyphicon-plus"></span> Добавить терапию</button>-->
 </fieldset>
 <p><button type="submit" class="btn btn-primary btn__width-size__1 center-block">Далее</button></p>
 <!--              EOF: STAGE 2              -->     
@@ -217,13 +322,14 @@
 
 
 <div class="forms--vizit0--stages-menu text-center btn-second-line-step">
-  <button type="button" class="btn btn-primary btn-success"><span class="glyphicon glyphicon-ok"></span> [% step1 %]</button>
-  <button type="button" class="btn btn-primary btn-active">[% step2 %]</button>
-  <button type="button" class="btn btn-default">[% step3 %]</button>
-  <button type="button" class="btn btn-default">[% step4 %]</button>
-  <button type="button" class="btn btn-default">[% step5 %]</button>
-  <button type="button" class="btn btn-default">[% step6 %]</button>
-  <button type="button" class="btn btn-default">[% step7 %]</button>
+	<button class="btn btn-primary btn-success" id="vizit0_stage1_tertiary"><span class="glyphicon glyphicon-ok"></span>[% step1 %]</button>
+	<button class="btn btn-primary btn-active" id="vizit0_stage2_secondary">[% step2 %]</button>
+	<button class="btn btn-default" id="vizit0_stage3_secondary">[% step3 %]</button>
+	<button class="btn btn-default" id="vizit0_stage4_secondary">[% step4 %]</button>
+	<button class="btn btn-default" id="vizit0_stage5_secondary">[% step5 %]</button>
+	<button class="btn btn-default" id="vizit0_stage6_secondary">[% step6 %]</button>
+	<button class="btn btn-default" id="vizit0_stage7_secondary">[% step7 %]</button>
+	<button class="btn btn-default" id="vizit0_stage8_secondary">[% step8 %]</button>
 </div>
 </div> <!-- /forms-wrapper -->
 
@@ -247,12 +353,13 @@
 <script src="/vendor/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
 <script src="/vendor/js/bootstrap-datepicker.ru.min.js" charset="UTF-8"></script>
 <script src="/assets/js/controls.js"></script>
+
 <script type="text/javascript">
 
 $(document).ready(function() {
-	$('input[type="date"]').datepicker({
+	$(".form-control.dattte").datepicker({
 		format: "dd/mm/yyyy",
-		startDate: "-100y",
+		startDate: "-20y",
 		endDate: "+0d",
 		startView: 2,
 		maxViewMode: 2,
@@ -265,6 +372,122 @@ $(document).ready(function() {
 	});
 });
 </script>
+
+<script>
+
+$('#vizit0_stage1').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage1");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit1_stage9').on('click', function(e){
+	$('input[name="next"]').val("vizit1_stage9");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit2_stage11').on('click', function(e){
+	$('input[name="next"]').val("vizit2_stage11");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit3_stage13').on('click', function(e){
+	$('input[name="next"]').val("vizit3_stage13");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit4_stage15').on('click', function(e){
+	$('input[name="next"]').val("vizit4_stage15");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit5_stage18').on('click', function(e){
+	$('input[name="next"]').val("vizit5_stage18");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage1_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage1");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage1_tertiary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage1");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage2').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage2");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage2_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage2");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage3').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage3");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage3_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage3");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage4').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage4");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage4_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage4");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage5').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage5");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage5_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage5");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage6').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage6");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage6_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage6");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage7').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage7");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage7_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage7");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage8').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage8");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+$('#vizit0_stage8_secondary').on('click', function(e){
+	$('input[name="next"]').val("vizit0_stage8");
+	document.getElementById('moxifloxacin_form').submit();
+});
+
+</script>
+
+
 <script>
 $(':checkbox').change(function(){
 if($(this).prop("checked") == true)
@@ -303,8 +526,6 @@ else if($(this).prop("checked") == false)
 }
 }); 
 </script>
-
-
 
 </body>
 </html>
